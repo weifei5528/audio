@@ -9,7 +9,7 @@ from scrapy.pipelines.images import ImagesPipeline
 from scrapy.http.request import Request
 from audio.util import Util
 from scrapy.pipelines.files import FilesPipeline
-
+#import eyed3
 
 class AudioPipeline(object):
     def process_item(self, item, spider):
