@@ -32,16 +32,21 @@ class Mp3(scrapy.Item):
     files = scrapy.Field()
 
 
-class beva(scrapy.Item):
-    name = scrapy.Field()
-    type_name = scrapy.Field()
-    author = scrapy.Field()
-    short_desc = scrapy.Field()
-    description = scrapy.Field()
+class BevaBook(scrapy.Item):
     image_urls = scrapy.Field()
     original_path = scrapy.Field()
     file_urls = scrapy.Field()
     content = scrapy.Field()
+    name = scrapy.Field()
+    description = scrapy.Field()
+
+
+class BevaBooks(scrapy.Field):
+    name = scrapy.Field()
+    type_name = scrapy.Field()
+    book = scrapy.Field()
+    short_desc = scrapy.Field()
+
 
 
 
