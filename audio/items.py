@@ -41,6 +41,7 @@ class beva(scrapy.Item):
     image_urls = scrapy.Field()
     original_path = scrapy.Field()
     file_urls = scrapy.Field()
+    content = scrapy.Field()
 
 
 
