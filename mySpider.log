@@ -1,11 +1,11 @@
-2018-12-19 17:31:46 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: audio)
-2018-12-19 17:31:46 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
-2018-12-19 17:31:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'audio', 'DOWNLOAD_TIMEOUT': 20, 'LOG_FILE': 'mySpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'audio.spiders', 'SPIDER_MODULES': ['audio.spiders']}
-2018-12-19 17:31:46 [scrapy.middleware] INFO: Enabled extensions:
+2018-12-19 22:04:58 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: audio)
+2018-12-19 22:04:58 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2018-12-19 22:04:58 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'audio', 'DOWNLOAD_TIMEOUT': 20, 'LOG_FILE': 'mySpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'audio.spiders', 'SPIDER_MODULES': ['audio.spiders']}
+2018-12-19 22:04:59 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.logstats.LogStats']
-2018-12-19 17:31:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2018-12-19 22:04:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
@@ -17,42 +17,594 @@
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-12-19 17:31:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+2018-12-19 22:04:59 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-12-19 17:31:46 [scrapy.middleware] INFO: Enabled item pipelines:
+2018-12-19 22:04:59 [scrapy.middleware] INFO: Enabled item pipelines:
 ['scrapy.pipelines.images.ImagesPipeline', 'audio.pipelines.AudioPipeline']
-2018-12-19 17:31:46 [scrapy.core.engine] INFO: Spider opened
-2018-12-19 17:31:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-12-19 17:32:12 [scrapy.pipelines.files] WARNING: File (code: 404): Error downloading file from <GET https://3w.beva.cn/story/images/res/defaulticons/L_v1_.png> referred in <None>
-2018-12-19 17:32:46 [scrapy.extensions.logstats] INFO: Crawled 2827 pages (at 2827 pages/min), scraped 5124 items (at 5124 items/min)
-2018-12-19 17:33:46 [scrapy.extensions.logstats] INFO: Crawled 5246 pages (at 2419 pages/min), scraped 9758 items (at 4634 items/min)
-2018-12-19 17:33:52 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-12-19 17:33:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1566697,
- 'downloader/request_count': 5577,
- 'downloader/request_method_count/GET': 5577,
- 'downloader/response_bytes': 43354113,
- 'downloader/response_count': 5577,
- 'downloader/response_status_count/200': 5576,
- 'downloader/response_status_count/404': 1,
- 'dupefilter/filtered': 36,
- 'file_count': 560,
- 'file_status_count/downloaded': 221,
- 'file_status_count/uptodate': 339,
- 'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 12, 19, 9, 33, 52, 594966),
- 'item_scraped_count': 10362,
- 'log_count/INFO': 9,
- 'log_count/WARNING': 1,
- 'request_depth_max': 174,
- 'response_received_count': 5577,
- 'scheduler/dequeued': 5355,
- 'scheduler/dequeued/memory': 5355,
- 'scheduler/enqueued': 5355,
- 'scheduler/enqueued/memory': 5355,
- 'start_time': datetime.datetime(2018, 12, 19, 9, 31, 46, 587759)}
-2018-12-19 17:33:52 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-12-19 22:04:59 [scrapy.core.engine] INFO: Spider opened
+2018-12-19 22:04:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-12-19 22:05:01 [scrapy.core.scraper] ERROR: Error processing {'name': '欧阳修', 'type_name': '名人故事', 'short_desc': '欧阳修从小写诗、赋文字，下笔就有成人的水平。\r\n', 'book': [{'content': '<p>欧阳修先生四岁时父亲就去世了，家境贫寒，没有钱供他读书。太夫人用芦苇秆在沙地上写画，教给他写字。还教给他诵读许多古人的篇章。到他年龄大些了，家里没有书可读，便就近到读书人家去借书来读，有时接着进行抄写。就这样夜以继日、废寝忘食，只是致力读书。从小写的诗、赋文字，下笔就有成人的水平，那样高了。</p>',
+ 'description': '欧阳修（1007－1073），字永叔，号醉翁，又号六一居士。汉族，吉安永丰（今属江西）人,自称庐陵（今永丰县沙溪人）。谥号文忠，世称欧阳文忠公，北宋卓越的文学家、史学家。',
+ 'file_urls': [],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/defaulticons/L_v1_mrgs.png'],
+ 'name': '欧阳修'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:03 [scrapy.core.scraper] ERROR: Error processing {'name': '老鼠娶亲', 'type_name': '睡前故事', 'short_desc': '老鼠也要娶媳妇，稀奇，稀奇，真稀奇！\r\n', 'book': [{'content': '<p>很久以前，有一对老鼠夫妻，他们的年纪都已经很大了，而他们的女儿也到了谈婚论嫁的年龄。</p><p>眼看就要过年了，鼠爸爸和鼠妈妈急着要为女儿找一位世界上最伟大、最有本领的丈夫。于是，第二天一大早，鼠爸爸和鼠妈妈便走出家门，开始为女儿寻找如意郎君。</p><p>这时，太阳公公从东方冉冉升起，给大地带来一片光明，鼠爸爸和鼠妈妈相视一笑，不约而同地说 '
+            '太阳公公正是我们所要寻找的理想对象呀！</p><p>太阳公公知道了他们的来意以后 '
+            '，不禁笑着对他们说我虽然能够光芒普照大地，给大家带来温暖，但是，当乌云来的时候，我就会变得黯淡无光了。因此，乌云才是天下 '
+            '最伟大的。而且我已经这样一大把年纪了，实在不适合做你们的女婿。</p><p>鼠爸爸和鼠妈妈觉得太阳公公的话很有道理，因此打算去找乌云。</p><p>当他们正要离开去找乌云的时候，天空忽然暗了下来。原来，乌云正好来拜访太阳公公，当他得知鼠爸爸和鼠妈妈的来意后，急忙说：“啊！不不，虽然我可以挡住太阳公公的光，但是，我可不是最有本领的，风才是你们理想的对象，因为只要他一来，我就会被吹得七零八落，晕头转向，他才是世界上最伟大的。”</p><p>说时迟那时快，突然， '
+            '呼 '
+            '地一声，风挥舞着他的大披风，神气活现地飞了过来。</p><p>当时大家都被吹得东倒西歪，感觉到风的威力的确如乌云所说，非常强大。</p><p>太阳公公和乌云极力推选风作鼠爸爸和鼠妈妈的女婿。</p><p>风被他们的话说得有些不好意思了，说道： '
+            '你们别看我有时候非常威风，但是只要有一堵墙，就可以将我弹倒在地，摔得浑身是伤！所以，在我看来，墙才是世界上最有本领、最伟大的，你们应该去找墙作你们的女婿。</p><p>鼠爸爸和鼠妈妈听了这话，看看四周一片广大的草原，对风说：“这里一片空旷，你让我们到哪里去找墙呢？”</p><p>风说：“你们顺着这个方向一直往前走，到了一个村子以后，就可以找到一面大墙了。”</p><p>鼠爸爸和鼠妈妈只好继续往前走，走了好几天，终于来到了那个村子，鼠妈妈眼睛一亮，大声说： '
+            '那儿果然有一堵大墙！</p><p>他们急忙跑过去，正准备开口请求大墙娶他们的女儿为妻时，却看见墙愁眉苦脸地说：</p><p>“看哪！你们这些老鼠，就是喜欢在我身上打洞，我真是拿你们没有办法。”</p><p>原来，这时有一只年轻力壮的老鼠正在大墙底下挖洞呢！</p><p>直到这时，鼠爸爸和鼠妈妈才恍然大悟，原来，他们也有让别人羡慕和无奈的才能。于是，就把女儿嫁给了这只年轻力壮的老鼠。这天正好是农历正月初三，因此人们就把这一天称为“老鼠娶亲”的日子。</p>',
+ 'description': '相传每年春节的正月初三，晚上人们都要早点熄灯睡觉，孩子们要放些糖果和花生在角落里，因为今夜是各地鼠王结婚的大喜日子，不骚扰老鼠一天，老鼠不骚扰人们一年。',
+ 'file_urls': ['http://story.beva.com/audio/download/11459/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10301/ST_laoshuquqin205213.png'],
+ 'name': '老鼠娶亲'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:05 [scrapy.core.scraper] ERROR: Error processing {'name': '小红帽', 'type_name': '睡前故事', 'short_desc': '小红帽与狼外婆的经典故事。\r\n', 'book': [{'content': '',
+ 'description': '从前有个可爱的小姑娘叫小红帽，一天，妈妈让小红帽去看望生病的奶奶，路上遇到了狼，狼引诱小红帽去采花，然后去奶奶家把奶奶吃掉了，可恶的狼扮成奶奶的样子准备吃掉小红帽，',
+ 'file_urls': ['http://story.beva.com/audio/download/10339/3'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10339/ST_xiaohongmao205213-1.jpg']}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:08 [scrapy.core.scraper] ERROR: Error processing {'name': '猪八戒吃西瓜', 'type_name': '睡前故事', 'short_desc': '猪八戒憨厚可爱，他的故事也很受孩子喜爱。\r\n', 'book': [{'content': '<p>有一天，天热极了。唐僧、孙悟空、猪八戒、沙和尚他们走得又累又渴，孙悟空说：“你们在这儿歇一会儿，我去摘点水果来给大家解解渴。”猪八戒连忙说：“我也去，我也去！”他想：跟了孙悟空去，能早点吃到水果，还可多吃几个。猪八戒跟着孙悟空，走呀，走呀，走了许多路，连个小酸梨也没找着。他心里不高兴了，就哎哟哎哟的叫起来。</p><p>孙悟空知道猪八戒偷懒，不去理他，就一个跟头翻到南海去摘水果了。</p><p>猪八戒，找了个树荫，正想睡一觉，忽然看见山脚下有一个绿油油的东西，走过去一看，哈哈，原来是个大西瓜！他高兴极了，把西瓜切成了四块，自言自语地说：“第一块，请师父吃；第二块请孙悟空吃；第三块请沙和尚吃；第四块，嗯，是我的。”他张开大嘴巴，几口就把这块西瓜吃了。</p><p>“西瓜一块不够吃，我把孙悟空的那一块吃了吧。”他又吃了一块。</p><p>“西瓜真解渴，再吃一块也不算多，我把沙和尚的一块也吃了吧。”他又吃了一块，这下只留下唐僧的一块了。他捧起来，放下去，放下去，又捧起来，最后还是没忍住，把这块西瓜也吃了。</p><p>“八戒，八戒！”</p><p>猪八戒一听，是孙悟空在叫他呢，原来孙悟空在南海摘了蜜桃、甜枣、玉梨回来，正好看见猪八戒在切西瓜，就在云头上偷偷地瞧着呢。</p><p>“八戒，八戒，你在哪里？”</p><p>猪八戒慌了，心想，我找到大西瓜自己吃了，要是让孙悟空知道，告诉了师父，这就糟了。他连忙拾起四块西瓜皮，把它们扔得远远的，这才回答说：“我，我在儿呢！”孙悟空说：“我摘了些果子，咱们回去一起吃吧。”猪八戒说：“好的，好的。”八戒刚走了几步，就摔了一跤，脸都跌肿了，低头一看，原来是踩在了自己刚才扔的西瓜皮上了。</p><p>孙悟空说：“是哪个懒家伙把西瓜皮乱丢，害得八戒摔了一跤！”</p><p>“哎，哎，不要紧，没摔痛！”</p><p>八戒和孙悟空继续往前走，啪嗒一下，八戒又摔了一跤。孙悟空说：“哎呀，又是哪个懒家伙偷吃了西瓜，把西瓜皮乱丢。”</p><p>八戒心想：怎么又踩上一块西瓜皮，真倒霉！可要小心点儿。他刚想到这儿，忽然脚下一滑，又跌了一跤，孙悟空哈哈大笑，说：“八戒！你今天怎么尽摔跤？”八戒的脸越涨越红，一句话也讲不出。总算走到了休息的地方，八戒心想：一路上摔了三跤，摔得我好苦啊。啪嗒，又是一下，八戒重重地摔在地上，再也爬不起来了。</p><p>唐僧、沙和尚看见八戒脸上青一块、紫一块，肿了一大半，更加胖了。就问他是怎么回事，八戒结结巴巴地说：“我不该一个人吃了一个大西瓜，\u3000'
+            '这一路上摔了四跤。”说得大家都笑了起来。</p><p></p>',
+ 'description': '《猪八戒吃西瓜》讲述了唐僧师徒四人去西天取经，一路走来，没看见一座房子，也没看到一个人，叉赶上大热天，太阳晒在身上火辣辣的。好不容易到了座破庙，孙悟空想去找些瓜果，猪八戒也闹着要去，可走了半天，也没看......',
+ 'file_urls': ['http://story.beva.com/audio/download/10118/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10661/ST_296-205-sh-zbjcxg.jpg'],
+ 'name': '猪八戒吃西瓜'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:10 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-12-19 22:05:10 [scrapy.core.scraper] ERROR: Error processing {'name': '小马过河', 'type_name': '睡前故事', 'short_desc': '人人都听不厌的故事。\r\n', 'book': [{'content': '<p>小马和他的妈妈住在小河边。他过的很快乐，时光飞快地过去了。有一天，妈妈把小马叫到身边说：“小马，你已经长大了，可以帮妈妈做事了。今天你把这袋粮食送到河对岸的村子里去吧。”</p><p>小马非常高兴地答应了。他驮着粮食飞快地来到了小河边。可是河上没有桥，只能自己淌过去。可又不知道河水有多深呢？犹豫中的小马一抬头，看见了正在不远处吃草的牛伯伯。小马赶紧跑过去问到：“牛伯伯，您知道那河里的水深不深呀？”</p><p>牛伯伯挺起他那高大的身体笑着说：“不深，不深。才到我的小腿。”</p><p>小马高兴地跑回河边准备淌过河去。他刚一迈腿，忽然听见一个声音说：“小马，小马别下去，这河可深啦。”小马低头一看，原来是小松鼠。小松鼠翘着她漂亮的尾巴，睁着圆圆的眼睛，很认真地说：“前两天我的一个伙伴不小心掉进了河里，河水就把他卷走了。”</p><p>小马一听没主意了。牛伯伯说河水浅，小松鼠说河水深，这可怎么办呀？只好回去问妈妈。马妈妈老远地就看见小马低着头驮着粮食又回来了。心想他一定是遇到困难了，就迎过去问小马。小马哭着把牛伯伯和小松鼠的话告诉了妈妈。妈妈安慰小马说：“没关系，咱们一起去看看吧。”</p><p>小马和妈妈又一次来到河边，妈妈让小马自己去试探一下河水有多深。小马小心地试探着，一步一步地淌过了河。噢，他明白了，河水既没有牛伯伯说的那么浅，也没有小松鼠说的那么深。只有自己亲自试过才知道。</p><p>小马深情地向妈妈望了一眼，心里说：“谢谢您！好妈妈。”</p><p>然后他转头向村子跑去。他今天特别高兴，你知道是为什么吗？</p><p></p>',
+ 'description': '“河水既不像小松鼠说的那么深，也不像老牛伯伯说的那么浅”，这是小马在亲身实践之后所得出的结论。小马的妈妈鼓励小马独立思考，敢于探索的精神。',
+ 'file_urls': ['http://story.beva.com/audio/download/10113/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10171/ST_xiaomaguohe.jpg'],
+ 'name': '小马过河'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:12 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-12-19 22:05:12 [scrapy.core.scraper] ERROR: Error processing {'name': '小壁虎借尾巴', 'type_name': '睡前故事', 'short_desc': '生动有趣的故事向宝宝介绍了各种可爱的动物以及它们...', 'book': [{'content': '<p></p><p>一天，小壁虎在墙角捉蚊子，一条蛇咬住了他的尾巴。\xa0'
+            '<br></p><p>小壁虎慌忙逃跑，一使劲儿，尾巴挣断了。没有尾巴多难看啊！小壁虎难过极了。\xa0'
+            '<br></p><p>小壁虎伤心地爬到屋檐下，他看见燕子在空中摆着尾巴飞翔，眼睛一亮：“我可以借条尾巴呀！”<br></p><p>于是，小壁虎对燕子说：“燕子阿姨，您的尾巴借给我行吗?”燕子说：“不行呀，我飞的时候，要用尾巴控制方向呢。”小壁虎告别了燕子，决定继续去借尾巴。\xa0'
+            '<br></p><p>小壁虎沿着墙壁向下爬的时候，看到一只小老鼠摆动着尾巴向上爬。<br></p><p>小壁虎说：“老鼠哥哥，您的尾巴借给我行吗？”小老鼠说：“这可不行，我爬行的时候需要尾巴帮忙。”小壁虎说声“再见”，然后继续向远方爬去。\xa0'
+            '<br></p><p>小壁虎刚爬到小河边，看到河面上冒出一串水花，他走近一看，原来是小鱼在河里摇尾巴呢。<br></p><p>小壁虎说：“小鱼姐姐，您的尾巴借给我行吗？”小鱼说：“真对不起，我要用尾巴拨水呢。”小壁虎一点都不灰心，又向前爬去。\xa0'
+            '<br></p><p>小壁虎沿着树干向上爬，他听到“嗒嗒——嗒嗒——”的声音，抬头一看，原来是啄木鸟在捉虫子呢。<br></p><p>小壁虎说：“啄木鸟先生，您的尾巴借给我行吗？”啄木鸟说：“不行呀，你瞧，我要用尾巴支撑身体呢。”小壁虎点点头，继续向前爬去。\xa0'
+            '<br></p><p>小壁虎爬呀爬，爬到草地上。草地上马儿在奔跑，尾巴扬起来，真神气！<br></p><p>小壁虎冲着一匹正在吃草的马儿说：“马大哥，您的尾巴借给我行吗？”马儿说：“不行呀，我跑的时候，要用尾巴保持平衡；我停下来的时候，要用尾巴驱赶蚊子和苍蝇。”小壁虎借不到尾巴，又累又难过，他想回家了。\xa0'
+            '<br></p><p>小壁虎默默地往家里爬去，一边爬一边想：“大家的尾巴都那么有用，我借不到尾巴了，怎么办呢？”\xa0'
+            '<br></p><p>一回到家，小壁虎就钻进妈妈怀里，把借尾巴的事告诉了妈妈。<br></p><p>妈妈笑着说：“傻孩子，你转过身子看看。”小壁虎转身一看，高兴地大叫起来：“我长出一条新尾巴啦！我的尾巴是最棒的！”<br></p><p></p>',
+ 'description': '小壁虎的尾巴被咬断了，它想去借条尾巴。可是大家的尾巴都很有用，不能借给它。怎么办？原来小壁虎长出了一条新尾巴。生动有趣的故事向宝宝介绍了各种可爱的动物以及它们尾巴的用处。',
+ 'file_urls': ['http://story.beva.com/audio/download/11689/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/43870/ST_xiaobihujieweiba.jpg'],
+ 'name': '小壁虎借尾巴'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:14 [scrapy.core.scraper] ERROR: Error processing {'name': '宝宝洗澡歌', 'type_name': '睡前故事', 'short_desc': '当你长大了，不再害怕了，还想让你抓紧我的手。', 'book': [{'content': '<p></p><p></p>',
+ 'description': '这是一首宝宝洗澡的儿歌，宝宝洗澡时，浴缸里有小鸭子、小鱼的玩具，宝宝快乐地一边洗澡，一边玩耍。乖宝宝爱洗澡，小鸭小鱼全报到，宝宝乐的哈哈笑。',
+ 'file_urls': ['http://story.beva.com/audio/download/10514/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/11614/ST_baobaoxizao205213-6.jpg'],
+ 'name': '宝宝洗澡歌'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:16 [scrapy.core.scraper] ERROR: Error processing {'name': '小蝌蚪找妈妈', 'type_name': '睡前故事', 'short_desc': '有趣的故事让孩子明白青蛙的成长过程。\r\n', 'book': [{'content': '<p>暖和的春天来了，池塘里的冰融化了。青蛙妈妈睡了一个冬天，也醒来了。她从泥洞里爬出来，扑通一声跳进池塘里，在水草上生下了很多黑黑的圆圆的卵。春风吹着，太阳照着，池塘里的水越来越暖和了。青蛙妈妈下的卵慢慢地活动起来，变成一群大脑袋长尾巴的蝌蚪，他们在水里游来游去，非常快乐。</p><p>有一天，鸭妈妈带着她的孩子到池塘中来玩耍。小蝌蚪看见小鸭子跟着妈妈，在水里划来划去，就想起自己的妈妈来了。小蝌蚪你问我，我问你，可是谁也不知道。</p><p>“我们的妈妈在哪里呢？”</p><p>他们一起游到鸭妈妈身边，问鸭妈妈：“鸭妈妈，鸭妈妈，您看见过我们的妈妈吗？请您告诉我们，我们的妈妈是什么样的呀？”</p><p>鸭妈妈回答说：“看见过，你们的妈妈头顶上有两只大眼睛，嘴巴又阔又大。你们自己去找吧。”</p><p>“谢谢您，鸭妈妈！”小蝌蚪们高高兴兴地向前游去。</p><p>一条大鱼游过来了，小蝌蚪看见头顶上有两只大眼睛，嘴巴又阔又大，他们想一定是妈妈来了，追上去喊妈妈：“妈妈！妈妈！”</p><p>大鱼笑着说：“我不是你们的妈妈，我是小鱼的妈妈。你们的妈妈有四条腿，到前面去找吧。”</p><p>“谢谢您啦！鱼妈妈！”小蝌蚪们再向前游去。</p><p>一只大乌龟游过来了，小蝌蚪看见大乌龟有四条腿，心里想：这回真的是妈妈来了，就追上去喊：“妈妈！妈妈！”</p><p>大乌龟笑着说：“我不是你们的妈妈，我是小乌龟的妈妈。你们的妈妈肚皮是白的，到前面去找吧。”</p><p>“谢谢您啦！乌龟妈妈！”小蝌蚪们再向前游去。</p><p>一只大白鹅“吭吭”地叫着，游了过来。小蝌蝌看见大白鹅的白肚皮，高兴地想：这回可真的找到妈妈了。追了上去，连声大喊：“妈妈！妈妈！”</p><p>大白鹅笑着说：“小蝌蝌，你们认错了。我不是你们的妈妈，我是小鹅的妈妈。你们的妈妈穿着绿衣服，唱起歌来‘咯咯咯’的，你们到前面去找吧。”</p><p>“谢谢您啦！鹅妈妈！”小蝌蚪再向前游去。</p><p>小蝌蚪游呀、游呀，游到池塘边，看见一只青蛙坐在圆荷叶上“咯咯咯”地唱歌，他们赶快游过去，小声地问：“请问您：您看见了我们的妈妈吗？她头顶上有两只大眼睛，嘴巴又阔又大，有四条腿，白白的肚皮，穿着绿衣服，唱起来‘咯咯咯’的......”</p><p>青蛙听了“咯咯咯”地笑起来，她说：“唉！傻孩子，我就是你们的妈吗呀！”</p><p>小蝌蚪们听了，一起摇摇尾巴说：“奇怪！奇怪！我们的样子为什么跟您不一样呢？”</p><p>青蛙妈妈笑着说：“你们还小呢，过几天你们会长出两条后腿来；再过几天，你们又会长出两条前腿来，四条腿长齐了，脱掉了绿衣服，就跟妈妈一样了，就可以跟妈妈跳到岸上去捉虫吃了。”小蝌蚪听了，高兴得在水里翻起跟头来：“啊！我们找到妈妈了！我们找到妈妈了！好妈妈，好妈妈，您快到我们这儿来吧！您快到我们这儿来吧！”</p><p>青蛙妈妈扑通一声跳进水里，和她的孩子们一块儿玩去了。</p>',
+ 'description': '《小蝌蚪找妈妈》讲述春天来了，冰融化了小动物们也睡醒了，青蛙也睡醒了，在水草上生下了很多黑黑的圆圆的卵，变成了小蝌蚪，于是小蝌蚪就开始找它们的妈妈，故事过程清楚的描述了青蛙成长的过程，和青蛙的特点。',
+ 'file_urls': ['http://story.beva.com/audio/download/10186/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10655/ST_xiao-ke-dou-zhao-ma-ma-205-213.png'],
+ 'name': '小蝌蚪找妈妈'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:18 [scrapy.core.scraper] ERROR: Error processing {'name': '懂礼貌的小兔', 'type_name': '睡前故事', 'short_desc': '小白兔懂礼貌，山羊伯伯把它夸！', 'book': [{'content': '<p></p><p>炎热的夏天来了，小鸟在树上叫着：“热呀，热呀！”<br></p><p>美丽的小白兔穿着漂亮的花裙子，哼着歌，蹦蹦跳跳地上了桥。它要到对面去采蘑菇。<br></p><p>就在这时候，它看见对面的山羊伯伯也准备要过桥。小桥很窄，只能一个人过桥。<br></p><p>小白兔看见了，停下脚步，大声说：“山羊伯伯您先过桥吧！”说完，它就从桥上退了下来。<br></p><p>山羊伯伯戴着眼镜，拄着拐杖在桥上慢慢地走着。山羊伯伯一不小心差点摔到了，吓得小白兔大声地喊：“山羊伯伯，小心一点过桥！”<br></p><p>山羊伯伯过了桥，摸着小白兔的头夸奖道：“你真乖！”<br></p><p></p>',
+ 'description': '一只小白兔去采蘑菇，正走到一个很窄的桥上，它看见对面的山羊伯伯也准备要过桥，就停下脚步，大声说：“山羊伯伯您先过桥吧！”说完，它就从桥上退了下来。',
+ 'file_urls': ['http://story.beva.com/audio/download/11618/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/13641/ST_donglimaodexiaotu205213.png'],
+ 'name': '懂礼貌的小兔'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:18 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-12-19 22:05:20 [scrapy.core.scraper] ERROR: Error processing {'name': '老奶奶和小花猫', 'type_name': '睡前故事', 'short_desc': '小花猫戴眼镜真是有趣。', 'book': [{'content': '<p></p><p>老奶奶年纪大了，每次看报纸都要带上一副紫色的眼镜。</p><p></p><p>小猫看见了很羡慕，心想：老奶奶带着眼镜多神气啊，我要是能戴一戴这副眼镜就好了。</p><p></p><p>可是，老奶奶每次看完报纸就把眼镜放到一个盒子里，又把盒子放到一个抽屉里。这个抽屉小猫可打不开。\u3000\u3000'
+            '</p><p></p><p>有一天，老奶奶看完报纸，还没来得及把眼镜放到盒子里，就被另一位老奶奶叫走了。小猫终于有机会了。他激动地拿过眼镜，小心地戴到鼻子上。\u3000\u3000'
+            '</p><p></p><p>小猫戴着眼镜，高兴地往外跑，跑到大门边，一看，哎呀，今天的门槛怎么变得这么高了。他用足力气使劲往上跳，一下，两下，就听“咚”的一声，小猫重重地摔倒在地上。真倒霉!小猫心里有点不太高兴。\u3000\u3000'
+            '</p><p></p><p>小猫戴着眼镜，继续往前跑。路好像越来越不平，一会儿高，一会儿低，脑袋也晕乎乎的。</p><p></p><p>小猫心想：准是刚才那个跟斗摔的。走到一棵大树旁，他想停下来歇一歇，刚坐下来，便看到前面走来一团黑乎乎的东西。</p><p></p><p>小猫觉得奇怪，哎呀，这是个什么怪物呀?小猫赶紧躲到了树后头。怪物越来越近，小猫在树后偷偷一看，奇怪，这个怪物怎么长得跟小狗一模一样，可是，却比小狗大好多好多，这到底是个什么东西呀?怪物渐渐走远了，小猫才慢慢地从树后走出来。\u3000\u3000'
+            '</p><p></p><p>这时候，小猫觉得肚子有点饿了，便想找点东西吃。他向老鼠洞走去，刚走到洞口，看见对面走来一只很大很大的老鼠，哇，怎么比猫还大，这准是一只老鼠精。小猫吓得掉头就跑，一边跑一边想：今天是个什么日子，怎么尽碰到怪事?</p><p></p><p>正想着，就撞到了路旁的树上。脑袋磕出一个大包，脸也磕破了，眼镜也掉到地上，一块镜片掉了下来。看着掉在地上的眼镜，小猫心里有点明白了，他想：“今天发生的事情肯定跟这副眼镜有关，这准是一副魔镜，我还是给老奶奶送回去吧。\u3000\u3000'
+            '</p><p></p><p>小猫把眼镜悄悄地放到老奶奶的桌上。\u3000\u3000'
+            '</p><p></p><p>老奶奶回来了，她看着弄坏的眼镜和磕破脸的小猫，就明白了。她摸着小猫的头说：“眼镜可不是什么好玩的东西。” '
+            '</p><p></p><p>小猫“妙呜妙呜”叫着，不好意思的低下了头。 </p>',
+ 'description': '一只小花猫，看见老奶奶戴眼镜，它很羡慕。一天老奶奶不在家，它就带着老奶奶的眼睛，他看到的东西都很奇怪很大，还把自己摔倒了。',
+ 'file_urls': ['http://story.beva.com/audio/download/11625/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/13625/ST_laonainaihexiaohua205213.png'],
+ 'name': '老奶奶和小花猫'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:22 [scrapy.core.scraper] ERROR: Error processing {'name': '龟兔赛跑', 'type_name': '睡前故事', 'short_desc': '一直流传几代人的经典故事。\r\n', 'book': [{'content': '<p>兔子长了四条腿，一蹦一跳，跑得可快啦。乌龟也长了四条腿，爬呀，爬呀，爬得真慢。有一天，兔子碰见乌龟，笑眯眯地说：“乌龟，乌龟，咱们来赛跑，好吗？”乌龟知道兔子在开他玩笑，瞪着一双小眼睛，不理也不踩。兔子知道乌龟不敢跟他赛跑，乐得摆着耳朵直蹦跳，还编了一支山歌笑话他：</p><p>乌龟，乌龟，爬爬，</p><p>一早出门采花；</p><p>乌龟，乌龟，走走，</p><p>傍晚还在门口。</p><p>乌龟生气了，说：“兔子，兔子，你别神气活现的，咱们就来赛跑。”</p><p>“什么，什么？乌龟，你说什么？”</p><p>“咱们这就来赛跑。”</p><p>兔子一听，差点笑破了肚子：“乌龟，你真敢跟我赛跑？那好，咱们从这儿跑起，看谁先跑到那边山脚下的一棵大树。预备！一，二，三，－－－”</p><p>兔子撒开腿就跑，跑得真快，一会儿就跑得很远了。他回头一看，乌龟才爬了一小段路呢，心想：乌龟敢跟兔子赛跑，真是天大的笑话！我呀，在这儿睡上一大觉，让他爬到这儿，不，让他爬到前面去吧，我三蹦二跳的就追上他了。“啦啦啦，啦啦啦，胜利准是我的嘛！”兔子把身子往地上一歪，合上眼皮，真的睡着了。</p><p>再说乌龟，爬得也真慢，可是他一个劲儿地爬，爬呀，爬呀，爬，等他爬到兔子身边，已经累坏了。兔子还再睡觉，乌龟也想休息一会儿，可他知道兔子跑得比他快，只有坚持爬下去才有可能赢。于是，他不停地往前爬、爬、爬。离大树越来越近了，只差几十步了，十几步了，几步了...终于到了。</p><p>兔子呢？他还在睡觉呢！兔子醒来后往后一看，咦，乌龟怎么不见了？再往前一看，哎呀，不得了了！乌龟已经爬到大树底下了。兔子一看可急了，急忙赶上去可已经晚了，乌龟已经赢了。乌龟胜利了。</p><p>兔子跑得快，乌龟跑得慢，为什么这次比赛乌龟反而赢了呢？</p>',
+ 'description': '在很久很久以前，有一片美丽的大树林。树林里住着许多许多小动物，有一只兔子和乌龟比赛跑看谁最先到达终点，途中兔子睡着了，乌龟得胜了。',
+ 'file_urls': ['http://story.beva.com/audio/download/10107/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10178/ST_guitusaipao205.jpg'],
+ 'name': '龟兔赛跑'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:24 [scrapy.core.scraper] ERROR: Error processing {'name': '小老鼠的“敲...', 'type_name': '睡前故事', 'short_desc': '这真是一根奇妙的小棍儿!', 'book': [{'content': '<p></p><p>“敲敲长”是一根五彩小棍儿，用它敲什么，什么就长大起来。比如，田野里有一棵小豆苗，细细的、矮矮的。米皮皮用“敲敲长”轻轻地敲它，嘴里说“长!长!长”，小豆苗就长得又高又壮了。\u3000\u3000'
+            '</p><p></p><p>米皮皮到兔妈妈家串门儿，兔妈妈正在犯愁：“唉，胡萝卜刚刚长出地面，孩子们就吵着要吃。”米皮皮说：“别急别急，让我来试试!”米皮皮用“敲敲长”轻轻地敲着小小的胡萝卜，嘴里说“长!长!长”，胡萝卜就长大了，兔妈妈高兴得谢了又谢。\u3000\u3000'
+            '</p><p></p><p>米皮皮和小狗、小鸡在草地上玩，突然下起了大雨。米皮皮找到一个小蘑菇，用“敲敲长”轻轻地敲着，嘴里说“长!长!长”，小蘑菇真的成了一把大伞。小狗、小鸡都躲到了大伞底下。\u3000\u3000'
+            '</p><p></p><p>可是有一回，米皮皮把“敲敲长”弄丢了。是谁捡到了宝贝呢?原来是狼婆婆。狼婆婆正在洞里发愁呢：“米皮皮，快来帮帮我!”米皮皮看到狼婆婆大得像头牛，就问：“你为什么要长这么大?” \u3000\u3000'
+            '</p><p></p><p>“我想试试‘敲敲长’灵不灵，我用你的宝贝敲敲腿，念了‘长，长，长’，就长得这么大了。” \u3000\u3000'
+            '</p><p></p><p>米皮皮拿过“敲敲长”，敲着狼婆婆的腿，嘴里说“缩!缩!缩”，果然，狼婆婆又变成了原样儿。\u3000\u3000'
+            '</p><p></p><p>原来呀，把这小棍儿倒过来敲，就能使东西缩小。这真是一根奇妙的小棍儿! </p>',
+ 'description': '兔妈妈正在犯愁：唉，胡萝卜刚刚长出地面，孩子们就吵着要吃。米皮皮说：别急别急，让我来试试!米皮皮用敲敲长轻轻地敲着小小的胡萝卜，嘴里说长!长!长',
+ 'file_urls': ['http://story.beva.com/audio/download/11463/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/43808/ST_xiaolaoshu205213.png'],
+ 'name': '小老鼠的“敲敲长”'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:05:26 [scrapy.core.scraper] ERROR: Error processing {'name': '小熊买糖果', 'type_name': '睡前故事', 'short_desc': '活泼可爱，充满乐趣。\r\n', 'book': [{'content': '<p>有只小熊记性很不好，什么话听过就忘记。</p><p>一天，小熊家里来了客人，妈妈让小熊到商店去买苹果、鸭梨、牛奶糖。小熊担心忘了，一边走一边念叨：“苹果、鸭梨、牛奶糖，苹果、鸭梨、牛奶糖...”</p><p>他光顾着背那句话，一不留神，“扑通！”绊倒了。这一摔不要紧，小熊把刚才背的话全都忘啦！“妈妈让我买什么来着？”他拍着脑门想呀，想呀，“噢，想起来了，是气球、宝剑、冲锋枪！”</p><p>小熊挎着宝剑，背着冲锋枪，牵着红气球回家了。妈妈说：“哟，你怎么买了玩具回来？”</p><p>妈妈又给了小熊一些钱，对他说：“这回可别忘记了！”</p><p>小熊点点头：“妈妈放心吧！”</p><p>“苹果、鸭梨、牛奶糖，苹果、鸭梨、牛奶糖...”小熊一边走一边念叨，他光顾着背了，忘了看路，“咚！”一头撞在大树上。撞得头上起了包，撞得两眼冒金花。这一撞不要紧，小熊又忘了妈妈让买的东西了。“妈妈让我买什么来着？”他想呀，想呀，“噢，想起来了，是木盆、瓦罐、大水缸！”</p><p>小熊夹着木盆，顶着瓦罐，抱着大水缸呼哧呼哧地回到家里。妈妈见了大吃一惊，知道他又把话忘记了。只好再给他一些钱，说：“这次可千万记牢啊！”</p><p>小熊提着篮儿点点头：“妈妈放心吧！”</p><p>这回，小熊避开了石头，绕过了大树，来到食品店，总算买好了苹果、鸭梨、牛奶糖。</p><p>小熊高高兴兴地朝家里跑去。正跑着，忽然，一阵风刮来，把他的帽子吹掉了。小熊连忙放下手中的竹篮儿，去捡帽子。</p><p>等他捡起帽子往回走的时候，忽然看见了地上的竹篮儿，里面还装着苹果、鸭梨、牛奶糖呢！他大声喊起来：“喂，谁丢竹篮子啦？快来领呀！”</p><p>你瞧这个小熊，多好笑！</p><p></p><p></p>',
+ 'description': '《小熊买糖果》有只小熊记性很不好，什么话听过就忘记。一天，家里来了客人，妈妈让小熊到商店去买苹果、鸭梨、牛奶糖。小熊担心忘了，一边走一连念叨：“苹果、鸭梨、牛奶糖，苹果、鸭梨、牛奶糖……”他光顾着背那......',
+ 'file_urls': ['http://story.beva.com/audio/download/10275/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10245/ST_xiaoxiongmaitangguo205213-19.jpg'],
+ 'name': '小熊买糖果'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:18 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: audio)
+2018-12-19 22:06:18 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2018-12-19 22:06:18 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'audio', 'DOWNLOAD_TIMEOUT': 20, 'LOG_FILE': 'mySpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'audio.spiders', 'SPIDER_MODULES': ['audio.spiders']}
+2018-12-19 22:06:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-12-19 22:06:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-12-19 22:06:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-12-19 22:06:19 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline', 'audio.pipelines.AudioPipeline']
+2018-12-19 22:06:19 [scrapy.core.engine] INFO: Spider opened
+2018-12-19 22:06:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-12-19 22:06:21 [scrapy.core.scraper] ERROR: Error processing {'name': '欧阳修', 'type_name': '名人故事', 'short_desc': '欧阳修从小写诗、赋文字，下笔就有成人的水平。\r\n', 'book': [{'content': '<p>欧阳修先生四岁时父亲就去世了，家境贫寒，没有钱供他读书。太夫人用芦苇秆在沙地上写画，教给他写字。还教给他诵读许多古人的篇章。到他年龄大些了，家里没有书可读，便就近到读书人家去借书来读，有时接着进行抄写。就这样夜以继日、废寝忘食，只是致力读书。从小写的诗、赋文字，下笔就有成人的水平，那样高了。</p>',
+ 'description': '欧阳修（1007－1073），字永叔，号醉翁，又号六一居士。汉族，吉安永丰（今属江西）人,自称庐陵（今永丰县沙溪人）。谥号文忠，世称欧阳文忠公，北宋卓越的文学家、史学家。',
+ 'file_urls': [],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/defaulticons/L_v1_mrgs.png'],
+ 'name': '欧阳修'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:23 [scrapy.core.scraper] ERROR: Error processing {'name': '小红帽', 'type_name': '睡前故事', 'short_desc': '小红帽与狼外婆的经典故事。\r\n', 'book': [{'content': '',
+ 'description': '从前有个可爱的小姑娘叫小红帽，一天，妈妈让小红帽去看望生病的奶奶，路上遇到了狼，狼引诱小红帽去采花，然后去奶奶家把奶奶吃掉了，可恶的狼扮成奶奶的样子准备吃掉小红帽，',
+ 'file_urls': ['http://story.beva.com/audio/download/10339/3'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10339/ST_xiaohongmao205213-1.jpg']}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:25 [scrapy.core.scraper] ERROR: Error processing {'name': '老鼠娶亲', 'type_name': '睡前故事', 'short_desc': '老鼠也要娶媳妇，稀奇，稀奇，真稀奇！\r\n', 'book': [{'content': '<p>很久以前，有一对老鼠夫妻，他们的年纪都已经很大了，而他们的女儿也到了谈婚论嫁的年龄。</p><p>眼看就要过年了，鼠爸爸和鼠妈妈急着要为女儿找一位世界上最伟大、最有本领的丈夫。于是，第二天一大早，鼠爸爸和鼠妈妈便走出家门，开始为女儿寻找如意郎君。</p><p>这时，太阳公公从东方冉冉升起，给大地带来一片光明，鼠爸爸和鼠妈妈相视一笑，不约而同地说 '
+            '太阳公公正是我们所要寻找的理想对象呀！</p><p>太阳公公知道了他们的来意以后 '
+            '，不禁笑着对他们说我虽然能够光芒普照大地，给大家带来温暖，但是，当乌云来的时候，我就会变得黯淡无光了。因此，乌云才是天下 '
+            '最伟大的。而且我已经这样一大把年纪了，实在不适合做你们的女婿。</p><p>鼠爸爸和鼠妈妈觉得太阳公公的话很有道理，因此打算去找乌云。</p><p>当他们正要离开去找乌云的时候，天空忽然暗了下来。原来，乌云正好来拜访太阳公公，当他得知鼠爸爸和鼠妈妈的来意后，急忙说：“啊！不不，虽然我可以挡住太阳公公的光，但是，我可不是最有本领的，风才是你们理想的对象，因为只要他一来，我就会被吹得七零八落，晕头转向，他才是世界上最伟大的。”</p><p>说时迟那时快，突然， '
+            '呼 '
+            '地一声，风挥舞着他的大披风，神气活现地飞了过来。</p><p>当时大家都被吹得东倒西歪，感觉到风的威力的确如乌云所说，非常强大。</p><p>太阳公公和乌云极力推选风作鼠爸爸和鼠妈妈的女婿。</p><p>风被他们的话说得有些不好意思了，说道： '
+            '你们别看我有时候非常威风，但是只要有一堵墙，就可以将我弹倒在地，摔得浑身是伤！所以，在我看来，墙才是世界上最有本领、最伟大的，你们应该去找墙作你们的女婿。</p><p>鼠爸爸和鼠妈妈听了这话，看看四周一片广大的草原，对风说：“这里一片空旷，你让我们到哪里去找墙呢？”</p><p>风说：“你们顺着这个方向一直往前走，到了一个村子以后，就可以找到一面大墙了。”</p><p>鼠爸爸和鼠妈妈只好继续往前走，走了好几天，终于来到了那个村子，鼠妈妈眼睛一亮，大声说： '
+            '那儿果然有一堵大墙！</p><p>他们急忙跑过去，正准备开口请求大墙娶他们的女儿为妻时，却看见墙愁眉苦脸地说：</p><p>“看哪！你们这些老鼠，就是喜欢在我身上打洞，我真是拿你们没有办法。”</p><p>原来，这时有一只年轻力壮的老鼠正在大墙底下挖洞呢！</p><p>直到这时，鼠爸爸和鼠妈妈才恍然大悟，原来，他们也有让别人羡慕和无奈的才能。于是，就把女儿嫁给了这只年轻力壮的老鼠。这天正好是农历正月初三，因此人们就把这一天称为“老鼠娶亲”的日子。</p>',
+ 'description': '相传每年春节的正月初三，晚上人们都要早点熄灯睡觉，孩子们要放些糖果和花生在角落里，因为今夜是各地鼠王结婚的大喜日子，不骚扰老鼠一天，老鼠不骚扰人们一年。',
+ 'file_urls': ['http://story.beva.com/audio/download/11459/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10301/ST_laoshuquqin205213.png'],
+ 'name': '老鼠娶亲'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:27 [scrapy.core.scraper] ERROR: Error processing {'name': '老奶奶和小花猫', 'type_name': '睡前故事', 'short_desc': '小花猫戴眼镜真是有趣。', 'book': [{'content': '<p></p><p>老奶奶年纪大了，每次看报纸都要带上一副紫色的眼镜。</p><p></p><p>小猫看见了很羡慕，心想：老奶奶带着眼镜多神气啊，我要是能戴一戴这副眼镜就好了。</p><p></p><p>可是，老奶奶每次看完报纸就把眼镜放到一个盒子里，又把盒子放到一个抽屉里。这个抽屉小猫可打不开。\u3000\u3000'
+            '</p><p></p><p>有一天，老奶奶看完报纸，还没来得及把眼镜放到盒子里，就被另一位老奶奶叫走了。小猫终于有机会了。他激动地拿过眼镜，小心地戴到鼻子上。\u3000\u3000'
+            '</p><p></p><p>小猫戴着眼镜，高兴地往外跑，跑到大门边，一看，哎呀，今天的门槛怎么变得这么高了。他用足力气使劲往上跳，一下，两下，就听“咚”的一声，小猫重重地摔倒在地上。真倒霉!小猫心里有点不太高兴。\u3000\u3000'
+            '</p><p></p><p>小猫戴着眼镜，继续往前跑。路好像越来越不平，一会儿高，一会儿低，脑袋也晕乎乎的。</p><p></p><p>小猫心想：准是刚才那个跟斗摔的。走到一棵大树旁，他想停下来歇一歇，刚坐下来，便看到前面走来一团黑乎乎的东西。</p><p></p><p>小猫觉得奇怪，哎呀，这是个什么怪物呀?小猫赶紧躲到了树后头。怪物越来越近，小猫在树后偷偷一看，奇怪，这个怪物怎么长得跟小狗一模一样，可是，却比小狗大好多好多，这到底是个什么东西呀?怪物渐渐走远了，小猫才慢慢地从树后走出来。\u3000\u3000'
+            '</p><p></p><p>这时候，小猫觉得肚子有点饿了，便想找点东西吃。他向老鼠洞走去，刚走到洞口，看见对面走来一只很大很大的老鼠，哇，怎么比猫还大，这准是一只老鼠精。小猫吓得掉头就跑，一边跑一边想：今天是个什么日子，怎么尽碰到怪事?</p><p></p><p>正想着，就撞到了路旁的树上。脑袋磕出一个大包，脸也磕破了，眼镜也掉到地上，一块镜片掉了下来。看着掉在地上的眼镜，小猫心里有点明白了，他想：“今天发生的事情肯定跟这副眼镜有关，这准是一副魔镜，我还是给老奶奶送回去吧。\u3000\u3000'
+            '</p><p></p><p>小猫把眼镜悄悄地放到老奶奶的桌上。\u3000\u3000'
+            '</p><p></p><p>老奶奶回来了，她看着弄坏的眼镜和磕破脸的小猫，就明白了。她摸着小猫的头说：“眼镜可不是什么好玩的东西。” '
+            '</p><p></p><p>小猫“妙呜妙呜”叫着，不好意思的低下了头。 </p>',
+ 'description': '一只小花猫，看见老奶奶戴眼镜，它很羡慕。一天老奶奶不在家，它就带着老奶奶的眼睛，他看到的东西都很奇怪很大，还把自己摔倒了。',
+ 'file_urls': ['http://story.beva.com/audio/download/11625/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/13625/ST_laonainaihexiaohua205213.png'],
+ 'name': '老奶奶和小花猫'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:29 [scrapy.core.scraper] ERROR: Error processing {'name': '好饿好饿的毛...', 'type_name': '睡前故事', 'short_desc': '毛毛虫说：“我好饿好饿呀！”\r\n', 'book': [{'content': '<p>月光下，一个小小的卵，躺在树叶上，一个星期天的早晨，暖暖的太阳升起来了，啪！从卵壳里钻出一条又瘦又饿的毛毛虫。他四下寻找着可以吃的东西。</p><p>星期一，他啃穿了一个苹果。可他还是觉得饿。</p><p>星期二，他啃穿了两个梨子，可他还是觉得饿。</p><p>星期三，他啃穿了三个李子，可他还是饿。</p><p>星期四，他啃穿了四个草莓，可他还是饿得受不了。</p><p>星期五，他啃穿了五个桔子，可他还是饿呀。</p><p>星期六，他啃穿了一块巧克力蛋糕，一个冰淇淋蛋筒，一条酸黄瓜，一片瑞士奶酪，一截萨拉米香肠，一根棒棒糖，一角樱桃馅饼，一段红肠，一只杯形蛋糕，还有一块甜西瓜。 '
+            '到了晚上，他就胃痛起来！</p><p>第二天，又是星期天。 '
+            '毛毛虫啃穿了一片可爱的绿树叶，这一回他感觉好多了。</p><p>现在他一点儿也不饿了——他也不再是一条小毛虫了。他是一条胖嘟嘟的大毛虫了。</p><p>他绕着自己的身子，造了一座叫做“茧”的小房子。他在那里面呆了两个多星期。</p><p>然后，他就在茧壳上啃出一个洞洞，钻了出来......</p><p>他已经是一只美丽的蝴蝶了！</p><p></p>',
+ 'description': '有一条又瘦又饿的毛毛虫，他四下寻找着可以吃的东西。他吃了很多很多东西，还是觉得非常饿，他也不再是一条小毛虫了，是一条胖嘟嘟的大毛虫了。他绕着自己的身子，造了一座叫做“茧”的小房子。他在那里面呆了两个多......',
+ 'file_urls': ['http://story.beva.com/audio/download/10271/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/11611/ST_原创封面205213-26.png'],
+ 'name': '好饿好饿的毛毛虫'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:31 [scrapy.core.scraper] ERROR: Error processing {'name': '小马过河', 'type_name': '睡前故事', 'short_desc': '人人都听不厌的故事。\r\n', 'book': [{'content': '<p>小马和他的妈妈住在小河边。他过的很快乐，时光飞快地过去了。有一天，妈妈把小马叫到身边说：“小马，你已经长大了，可以帮妈妈做事了。今天你把这袋粮食送到河对岸的村子里去吧。”</p><p>小马非常高兴地答应了。他驮着粮食飞快地来到了小河边。可是河上没有桥，只能自己淌过去。可又不知道河水有多深呢？犹豫中的小马一抬头，看见了正在不远处吃草的牛伯伯。小马赶紧跑过去问到：“牛伯伯，您知道那河里的水深不深呀？”</p><p>牛伯伯挺起他那高大的身体笑着说：“不深，不深。才到我的小腿。”</p><p>小马高兴地跑回河边准备淌过河去。他刚一迈腿，忽然听见一个声音说：“小马，小马别下去，这河可深啦。”小马低头一看，原来是小松鼠。小松鼠翘着她漂亮的尾巴，睁着圆圆的眼睛，很认真地说：“前两天我的一个伙伴不小心掉进了河里，河水就把他卷走了。”</p><p>小马一听没主意了。牛伯伯说河水浅，小松鼠说河水深，这可怎么办呀？只好回去问妈妈。马妈妈老远地就看见小马低着头驮着粮食又回来了。心想他一定是遇到困难了，就迎过去问小马。小马哭着把牛伯伯和小松鼠的话告诉了妈妈。妈妈安慰小马说：“没关系，咱们一起去看看吧。”</p><p>小马和妈妈又一次来到河边，妈妈让小马自己去试探一下河水有多深。小马小心地试探着，一步一步地淌过了河。噢，他明白了，河水既没有牛伯伯说的那么浅，也没有小松鼠说的那么深。只有自己亲自试过才知道。</p><p>小马深情地向妈妈望了一眼，心里说：“谢谢您！好妈妈。”</p><p>然后他转头向村子跑去。他今天特别高兴，你知道是为什么吗？</p><p></p>',
+ 'description': '“河水既不像小松鼠说的那么深，也不像老牛伯伯说的那么浅”，这是小马在亲身实践之后所得出的结论。小马的妈妈鼓励小马独立思考，敢于探索的精神。',
+ 'file_urls': ['http://story.beva.com/audio/download/10113/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10171/ST_xiaomaguohe.jpg'],
+ 'name': '小马过河'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:33 [scrapy.core.scraper] ERROR: Error processing {'name': '猪八戒吃西瓜', 'type_name': '睡前故事', 'short_desc': '猪八戒憨厚可爱，他的故事也很受孩子喜爱。\r\n', 'book': [{'content': '<p>有一天，天热极了。唐僧、孙悟空、猪八戒、沙和尚他们走得又累又渴，孙悟空说：“你们在这儿歇一会儿，我去摘点水果来给大家解解渴。”猪八戒连忙说：“我也去，我也去！”他想：跟了孙悟空去，能早点吃到水果，还可多吃几个。猪八戒跟着孙悟空，走呀，走呀，走了许多路，连个小酸梨也没找着。他心里不高兴了，就哎哟哎哟的叫起来。</p><p>孙悟空知道猪八戒偷懒，不去理他，就一个跟头翻到南海去摘水果了。</p><p>猪八戒，找了个树荫，正想睡一觉，忽然看见山脚下有一个绿油油的东西，走过去一看，哈哈，原来是个大西瓜！他高兴极了，把西瓜切成了四块，自言自语地说：“第一块，请师父吃；第二块请孙悟空吃；第三块请沙和尚吃；第四块，嗯，是我的。”他张开大嘴巴，几口就把这块西瓜吃了。</p><p>“西瓜一块不够吃，我把孙悟空的那一块吃了吧。”他又吃了一块。</p><p>“西瓜真解渴，再吃一块也不算多，我把沙和尚的一块也吃了吧。”他又吃了一块，这下只留下唐僧的一块了。他捧起来，放下去，放下去，又捧起来，最后还是没忍住，把这块西瓜也吃了。</p><p>“八戒，八戒！”</p><p>猪八戒一听，是孙悟空在叫他呢，原来孙悟空在南海摘了蜜桃、甜枣、玉梨回来，正好看见猪八戒在切西瓜，就在云头上偷偷地瞧着呢。</p><p>“八戒，八戒，你在哪里？”</p><p>猪八戒慌了，心想，我找到大西瓜自己吃了，要是让孙悟空知道，告诉了师父，这就糟了。他连忙拾起四块西瓜皮，把它们扔得远远的，这才回答说：“我，我在儿呢！”孙悟空说：“我摘了些果子，咱们回去一起吃吧。”猪八戒说：“好的，好的。”八戒刚走了几步，就摔了一跤，脸都跌肿了，低头一看，原来是踩在了自己刚才扔的西瓜皮上了。</p><p>孙悟空说：“是哪个懒家伙把西瓜皮乱丢，害得八戒摔了一跤！”</p><p>“哎，哎，不要紧，没摔痛！”</p><p>八戒和孙悟空继续往前走，啪嗒一下，八戒又摔了一跤。孙悟空说：“哎呀，又是哪个懒家伙偷吃了西瓜，把西瓜皮乱丢。”</p><p>八戒心想：怎么又踩上一块西瓜皮，真倒霉！可要小心点儿。他刚想到这儿，忽然脚下一滑，又跌了一跤，孙悟空哈哈大笑，说：“八戒！你今天怎么尽摔跤？”八戒的脸越涨越红，一句话也讲不出。总算走到了休息的地方，八戒心想：一路上摔了三跤，摔得我好苦啊。啪嗒，又是一下，八戒重重地摔在地上，再也爬不起来了。</p><p>唐僧、沙和尚看见八戒脸上青一块、紫一块，肿了一大半，更加胖了。就问他是怎么回事，八戒结结巴巴地说：“我不该一个人吃了一个大西瓜，\u3000'
+            '这一路上摔了四跤。”说得大家都笑了起来。</p><p></p>',
+ 'description': '《猪八戒吃西瓜》讲述了唐僧师徒四人去西天取经，一路走来，没看见一座房子，也没看到一个人，叉赶上大热天，太阳晒在身上火辣辣的。好不容易到了座破庙，孙悟空想去找些瓜果，猪八戒也闹着要去，可走了半天，也没看......',
+ 'file_urls': ['http://story.beva.com/audio/download/10118/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10661/ST_296-205-sh-zbjcxg.jpg'],
+ 'name': '猪八戒吃西瓜'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:35 [scrapy.core.scraper] ERROR: Error processing {'name': '小蝌蚪找妈妈', 'type_name': '睡前故事', 'short_desc': '有趣的故事让孩子明白青蛙的成长过程。\r\n', 'book': [{'content': '<p>暖和的春天来了，池塘里的冰融化了。青蛙妈妈睡了一个冬天，也醒来了。她从泥洞里爬出来，扑通一声跳进池塘里，在水草上生下了很多黑黑的圆圆的卵。春风吹着，太阳照着，池塘里的水越来越暖和了。青蛙妈妈下的卵慢慢地活动起来，变成一群大脑袋长尾巴的蝌蚪，他们在水里游来游去，非常快乐。</p><p>有一天，鸭妈妈带着她的孩子到池塘中来玩耍。小蝌蚪看见小鸭子跟着妈妈，在水里划来划去，就想起自己的妈妈来了。小蝌蚪你问我，我问你，可是谁也不知道。</p><p>“我们的妈妈在哪里呢？”</p><p>他们一起游到鸭妈妈身边，问鸭妈妈：“鸭妈妈，鸭妈妈，您看见过我们的妈妈吗？请您告诉我们，我们的妈妈是什么样的呀？”</p><p>鸭妈妈回答说：“看见过，你们的妈妈头顶上有两只大眼睛，嘴巴又阔又大。你们自己去找吧。”</p><p>“谢谢您，鸭妈妈！”小蝌蚪们高高兴兴地向前游去。</p><p>一条大鱼游过来了，小蝌蚪看见头顶上有两只大眼睛，嘴巴又阔又大，他们想一定是妈妈来了，追上去喊妈妈：“妈妈！妈妈！”</p><p>大鱼笑着说：“我不是你们的妈妈，我是小鱼的妈妈。你们的妈妈有四条腿，到前面去找吧。”</p><p>“谢谢您啦！鱼妈妈！”小蝌蚪们再向前游去。</p><p>一只大乌龟游过来了，小蝌蚪看见大乌龟有四条腿，心里想：这回真的是妈妈来了，就追上去喊：“妈妈！妈妈！”</p><p>大乌龟笑着说：“我不是你们的妈妈，我是小乌龟的妈妈。你们的妈妈肚皮是白的，到前面去找吧。”</p><p>“谢谢您啦！乌龟妈妈！”小蝌蚪们再向前游去。</p><p>一只大白鹅“吭吭”地叫着，游了过来。小蝌蝌看见大白鹅的白肚皮，高兴地想：这回可真的找到妈妈了。追了上去，连声大喊：“妈妈！妈妈！”</p><p>大白鹅笑着说：“小蝌蝌，你们认错了。我不是你们的妈妈，我是小鹅的妈妈。你们的妈妈穿着绿衣服，唱起歌来‘咯咯咯’的，你们到前面去找吧。”</p><p>“谢谢您啦！鹅妈妈！”小蝌蚪再向前游去。</p><p>小蝌蚪游呀、游呀，游到池塘边，看见一只青蛙坐在圆荷叶上“咯咯咯”地唱歌，他们赶快游过去，小声地问：“请问您：您看见了我们的妈妈吗？她头顶上有两只大眼睛，嘴巴又阔又大，有四条腿，白白的肚皮，穿着绿衣服，唱起来‘咯咯咯’的......”</p><p>青蛙听了“咯咯咯”地笑起来，她说：“唉！傻孩子，我就是你们的妈吗呀！”</p><p>小蝌蚪们听了，一起摇摇尾巴说：“奇怪！奇怪！我们的样子为什么跟您不一样呢？”</p><p>青蛙妈妈笑着说：“你们还小呢，过几天你们会长出两条后腿来；再过几天，你们又会长出两条前腿来，四条腿长齐了，脱掉了绿衣服，就跟妈妈一样了，就可以跟妈妈跳到岸上去捉虫吃了。”小蝌蚪听了，高兴得在水里翻起跟头来：“啊！我们找到妈妈了！我们找到妈妈了！好妈妈，好妈妈，您快到我们这儿来吧！您快到我们这儿来吧！”</p><p>青蛙妈妈扑通一声跳进水里，和她的孩子们一块儿玩去了。</p>',
+ 'description': '《小蝌蚪找妈妈》讲述春天来了，冰融化了小动物们也睡醒了，青蛙也睡醒了，在水草上生下了很多黑黑的圆圆的卵，变成了小蝌蚪，于是小蝌蚪就开始找它们的妈妈，故事过程清楚的描述了青蛙成长的过程，和青蛙的特点。',
+ 'file_urls': ['http://story.beva.com/audio/download/10186/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10655/ST_xiao-ke-dou-zhao-ma-ma-205-213.png'],
+ 'name': '小蝌蚪找妈妈'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:37 [scrapy.core.scraper] ERROR: Error processing {'name': '宝宝洗澡歌', 'type_name': '睡前故事', 'short_desc': '当你长大了，不再害怕了，还想让你抓紧我的手。', 'book': [{'content': '<p></p><p></p>',
+ 'description': '这是一首宝宝洗澡的儿歌，宝宝洗澡时，浴缸里有小鸭子、小鱼的玩具，宝宝快乐地一边洗澡，一边玩耍。乖宝宝爱洗澡，小鸭小鱼全报到，宝宝乐的哈哈笑。',
+ 'file_urls': ['http://story.beva.com/audio/download/10514/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/11614/ST_baobaoxizao205213-6.jpg'],
+ 'name': '宝宝洗澡歌'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:39 [scrapy.core.scraper] ERROR: Error processing {'name': '懂礼貌的小兔', 'type_name': '睡前故事', 'short_desc': '小白兔懂礼貌，山羊伯伯把它夸！', 'book': [{'content': '<p></p><p>炎热的夏天来了，小鸟在树上叫着：“热呀，热呀！”<br></p><p>美丽的小白兔穿着漂亮的花裙子，哼着歌，蹦蹦跳跳地上了桥。它要到对面去采蘑菇。<br></p><p>就在这时候，它看见对面的山羊伯伯也准备要过桥。小桥很窄，只能一个人过桥。<br></p><p>小白兔看见了，停下脚步，大声说：“山羊伯伯您先过桥吧！”说完，它就从桥上退了下来。<br></p><p>山羊伯伯戴着眼镜，拄着拐杖在桥上慢慢地走着。山羊伯伯一不小心差点摔到了，吓得小白兔大声地喊：“山羊伯伯，小心一点过桥！”<br></p><p>山羊伯伯过了桥，摸着小白兔的头夸奖道：“你真乖！”<br></p><p></p>',
+ 'description': '一只小白兔去采蘑菇，正走到一个很窄的桥上，它看见对面的山羊伯伯也准备要过桥，就停下脚步，大声说：“山羊伯伯您先过桥吧！”说完，它就从桥上退了下来。',
+ 'file_urls': ['http://story.beva.com/audio/download/11618/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/13641/ST_donglimaodexiaotu205213.png'],
+ 'name': '懂礼貌的小兔'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:42 [scrapy.core.scraper] ERROR: Error processing {'name': '不爱洗澡的小猪', 'type_name': '睡前故事', 'short_desc': '干干净净，人人爱。', 'book': [{'content': '<p>小猪罗罗胖胖的、白白的，可真讨人喜欢啦，小动物们都爱和它做朋友，可是，最近罗罗变得不爱洗澡了，身上臭臭的，小动物们再也不和它玩了。</p><p>有一天，它去参加小兔咪咪的生日宴会，它对大家说：“我们一起来跳舞，帮咪咪切蛋糕吧！”可大家都不喜欢它，都说：“快走开，讨厌的臭臭！”罗罗伤心地哭起来：“为什么大家都不和我玩，还叫我臭臭呢？”大象伯伯忙说：“这都怪你自己，谁叫你不爱洗澡啊，大家才不和又脏又臭的娃娃玩呢！”罗罗听完大象伯伯的话，很不好意思，赶紧跑回家洗了个澡。</p><p>瞧，现在的罗罗多干净呀，小动物们又和以前一样喜欢它了！</p><p></p>',
+ 'description': '小猪罗罗白白胖胖，大家可喜欢啦！可是现在他变得很懒，不爱洗澡，身上臭臭的，大家都不喜欢他。罗罗可难受了，赶紧跑回家洗了个泡泡澡，又变得白白净净的啦！',
+ 'file_urls': [],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/11613/ST_buaixizaodexiaozhu205213-20.jpg'],
+ 'name': '不爱洗澡的小猪'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:44 [scrapy.core.scraper] ERROR: Error processing {'name': '龟兔赛跑', 'type_name': '睡前故事', 'short_desc': '一直流传几代人的经典故事。\r\n', 'book': [{'content': '<p>兔子长了四条腿，一蹦一跳，跑得可快啦。乌龟也长了四条腿，爬呀，爬呀，爬得真慢。有一天，兔子碰见乌龟，笑眯眯地说：“乌龟，乌龟，咱们来赛跑，好吗？”乌龟知道兔子在开他玩笑，瞪着一双小眼睛，不理也不踩。兔子知道乌龟不敢跟他赛跑，乐得摆着耳朵直蹦跳，还编了一支山歌笑话他：</p><p>乌龟，乌龟，爬爬，</p><p>一早出门采花；</p><p>乌龟，乌龟，走走，</p><p>傍晚还在门口。</p><p>乌龟生气了，说：“兔子，兔子，你别神气活现的，咱们就来赛跑。”</p><p>“什么，什么？乌龟，你说什么？”</p><p>“咱们这就来赛跑。”</p><p>兔子一听，差点笑破了肚子：“乌龟，你真敢跟我赛跑？那好，咱们从这儿跑起，看谁先跑到那边山脚下的一棵大树。预备！一，二，三，－－－”</p><p>兔子撒开腿就跑，跑得真快，一会儿就跑得很远了。他回头一看，乌龟才爬了一小段路呢，心想：乌龟敢跟兔子赛跑，真是天大的笑话！我呀，在这儿睡上一大觉，让他爬到这儿，不，让他爬到前面去吧，我三蹦二跳的就追上他了。“啦啦啦，啦啦啦，胜利准是我的嘛！”兔子把身子往地上一歪，合上眼皮，真的睡着了。</p><p>再说乌龟，爬得也真慢，可是他一个劲儿地爬，爬呀，爬呀，爬，等他爬到兔子身边，已经累坏了。兔子还再睡觉，乌龟也想休息一会儿，可他知道兔子跑得比他快，只有坚持爬下去才有可能赢。于是，他不停地往前爬、爬、爬。离大树越来越近了，只差几十步了，十几步了，几步了...终于到了。</p><p>兔子呢？他还在睡觉呢！兔子醒来后往后一看，咦，乌龟怎么不见了？再往前一看，哎呀，不得了了！乌龟已经爬到大树底下了。兔子一看可急了，急忙赶上去可已经晚了，乌龟已经赢了。乌龟胜利了。</p><p>兔子跑得快，乌龟跑得慢，为什么这次比赛乌龟反而赢了呢？</p>',
+ 'description': '在很久很久以前，有一片美丽的大树林。树林里住着许多许多小动物，有一只兔子和乌龟比赛跑看谁最先到达终点，途中兔子睡着了，乌龟得胜了。',
+ 'file_urls': ['http://story.beva.com/audio/download/10107/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10178/ST_guitusaipao205.jpg'],
+ 'name': '龟兔赛跑'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:46 [scrapy.core.scraper] ERROR: Error processing {'name': '拔萝卜', 'type_name': '睡前故事', 'short_desc': '流传永久的小故事。\r\n', 'book': [{'content': '<p>老公公种了个萝卜，他对萝卜说：“长吧，长吧，萝卜啊，长得甜呐！长吧，长吧，萝卜啊，长得大啊！”萝卜越长越大，大得不得了。</p><p>老公公就去拔萝卜。他拉住萝卜的叶子，“嗨哟，嗨哟”拔呀拔，拔不动。老公公喊：“老婆婆，老婆婆，快来帮忙拔萝卜！”“唉！来了，来了。”</p><p>老婆婆拉着老公公，老公公拉着萝卜叶子，一起拔萝卜。“嗨哟，嗨哟”拔呀拔，还是拔不动。老婆婆喊：“小姑娘，小姑娘，快来帮忙拔萝卜！”“唉！来了，来了。”</p><p>小姑娘拉着老婆婆，老婆婆拉着老公公，老公公拉着萝卜叶子，一起拔萝卜。“嗨哟，嗨哟”拔呀拔，还是拔不动。小姑娘喊。“小狗儿，小狗儿，快来帮忙拔萝卜！”“汪汪汪！来了，来了。”</p><p>小狗儿拉着小姑娘，小姑娘拉老婆婆，老婆婆拉着老公公，老公公拉着萝卜叶子，一起拔萝卜。“嗨哟，嗨哟”拔呀拔，还是拔不动。小狗儿喊：“小花猫，小花猫，快来帮忙拔萝卜！”“喵喵喵！来了，来了。”</p><p>小花猫拉着小狗儿，小狗儿拉着小姑娘，小姑娘拉着老婆婆，老婆婆拉着老公公，老公公拉着萝卜叶子，一起拔萝卜。“嗨哟，嗨哟”拔呀拔，还是拔不动。小花猫喊：“小耗子，小耗子，快来帮忙拔萝卜！”“吱吱吱！来了，来了。”</p><p>小耗子拉着小花猫，小花猫拉着小狗儿，小狗儿拉着小姑娘，小姑娘拉着老婆婆，老婆婆拉着老公公，老公公拉着萝卜叶子，一起拔萝卜。“嗨哟，嗨哟”拔呀拔，大萝卜有点动了，再用力地拔呀拔，大萝卜拔出来啦！他们高高兴兴地把大萝卜抬回家去了。</p>',
+ 'description': '《拔萝卜》讲述老公公种点儿萝卜，到了收获的季节，有一个非常大的萝卜，怎么拔也拔不动，于是他喊来老婆婆，还是拔不动，小耗子拉着小花猫，小花猫拉着小狗儿，小狗儿拉着小姑娘，小姑娘拉着老婆婆，老婆婆拉着老公......',
+ 'file_urls': ['http://story.beva.com/audio/download/10101/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10263/ST_baluobo205213-4.jpg'],
+ 'name': '拔萝卜'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:48 [scrapy.core.scraper] ERROR: Error processing {'name': '小熊买糖果', 'type_name': '睡前故事', 'short_desc': '活泼可爱，充满乐趣。\r\n', 'book': [{'content': '<p>有只小熊记性很不好，什么话听过就忘记。</p><p>一天，小熊家里来了客人，妈妈让小熊到商店去买苹果、鸭梨、牛奶糖。小熊担心忘了，一边走一边念叨：“苹果、鸭梨、牛奶糖，苹果、鸭梨、牛奶糖...”</p><p>他光顾着背那句话，一不留神，“扑通！”绊倒了。这一摔不要紧，小熊把刚才背的话全都忘啦！“妈妈让我买什么来着？”他拍着脑门想呀，想呀，“噢，想起来了，是气球、宝剑、冲锋枪！”</p><p>小熊挎着宝剑，背着冲锋枪，牵着红气球回家了。妈妈说：“哟，你怎么买了玩具回来？”</p><p>妈妈又给了小熊一些钱，对他说：“这回可别忘记了！”</p><p>小熊点点头：“妈妈放心吧！”</p><p>“苹果、鸭梨、牛奶糖，苹果、鸭梨、牛奶糖...”小熊一边走一边念叨，他光顾着背了，忘了看路，“咚！”一头撞在大树上。撞得头上起了包，撞得两眼冒金花。这一撞不要紧，小熊又忘了妈妈让买的东西了。“妈妈让我买什么来着？”他想呀，想呀，“噢，想起来了，是木盆、瓦罐、大水缸！”</p><p>小熊夹着木盆，顶着瓦罐，抱着大水缸呼哧呼哧地回到家里。妈妈见了大吃一惊，知道他又把话忘记了。只好再给他一些钱，说：“这次可千万记牢啊！”</p><p>小熊提着篮儿点点头：“妈妈放心吧！”</p><p>这回，小熊避开了石头，绕过了大树，来到食品店，总算买好了苹果、鸭梨、牛奶糖。</p><p>小熊高高兴兴地朝家里跑去。正跑着，忽然，一阵风刮来，把他的帽子吹掉了。小熊连忙放下手中的竹篮儿，去捡帽子。</p><p>等他捡起帽子往回走的时候，忽然看见了地上的竹篮儿，里面还装着苹果、鸭梨、牛奶糖呢！他大声喊起来：“喂，谁丢竹篮子啦？快来领呀！”</p><p>你瞧这个小熊，多好笑！</p><p></p><p></p>',
+ 'description': '《小熊买糖果》有只小熊记性很不好，什么话听过就忘记。一天，家里来了客人，妈妈让小熊到商店去买苹果、鸭梨、牛奶糖。小熊担心忘了，一边走一连念叨：“苹果、鸭梨、牛奶糖，苹果、鸭梨、牛奶糖……”他光顾着背那......',
+ 'file_urls': ['http://story.beva.com/audio/download/10275/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10245/ST_xiaoxiongmaitangguo205213-19.jpg'],
+ 'name': '小熊买糖果'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:49 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-12-19 22:06:50 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-12-19 22:06:50 [scrapy.core.scraper] ERROR: Error processing {'name': '三只小猪', 'type_name': '睡前故事', 'short_desc': '流传永久的小故事。\r\n', 'book': [{'content': '<p>有三只可爱的小猪，他们都想建一座漂亮的房子。</p><p>老大随便用稻草围成了一座房子。“哈哈，我有自己的房子了！”老大乐得欢蹦乱跳。</p><p>老二呢，用木头建成了一座房子。</p><p>老三却想用砖瓦砌一座房子，于是它夜以继日地干了起来。哥哥们早就住进新房子了，它还在不辞辛苦地砌墙、粉刷。</p><p>这样整整过了三个月，老三的新房子也盖好了。它好高兴啊！</p><p>有一天，来了一只大野狼。老大惊慌地躲进了自己的稻草屋。野狼“嘿嘿”地冷笑了两声，狠狠吹了口气，就把稻草屋吹倒了。老大只好逃到老二家里。</p><p>大野狼追到老二家门前停了下来，心想：你们以为木头房子就能难住我吗？它用力向大门撞去。“哗啦”一声，木头房子被撞倒了。</p><p>兄弟两只好拼命逃到老三家，气喘吁吁地说：“狼来了！”老三赶紧关紧了门窗，胸有成竹地说：“别怕！没问题了！”</p><p>大野狼站在大门前，它知道房子里有三只小猪，可不知怎样才能进去。它对着房子又吹又撞，可是房子坚不可摧。</p><p>大野狼气急败坏的绕着房子转了一圈，最后爬上屋顶，它想从烟囱溜进去。老三从窗口发现后，马上点起了火。大野狼滑下来时，刚好掉进火炉里，整条尾巴都烧焦了。它嚎叫着夹着尾巴逃走了，再也不敢来找三只小猪的麻烦了。</p>',
+ 'description': '《三只小猪》的经典故事，完全颠覆故事的发展与可能。三只小猪一样是小猪三兄弟，一样盖自己的小房子，大灰狼还是来敲门。但是这次大灰狼不是从烟囱里掉进滚烫的汤里，而是把三只小猪吹出故事了。故事外是安全的吗？......',
+ 'file_urls': ['http://story.beva.com/audio/download/10222/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10391/ST_sanzhixiaozhu205.jpg'],
+ 'name': '三只小猪'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:52 [scrapy.core.scraper] ERROR: Error processing {'name': '懂礼貌的小兔', 'type_name': '睡前故事', 'short_desc': '小白兔懂礼貌，山羊伯伯把它夸！', 'book': [{'content': '<p>炎热的夏天来了，小鸟在树上叫着：“热呀，热呀！”美丽的小白兔穿着漂亮的花裙子，哼着歌，蹦蹦跳跳地上了桥。它要到对面去采蘑菇。</p><p>\u3000\u3000'
+            '就在这时候，它看见对面的山羊伯伯也准备要过桥。小桥很窄，只能一个人过桥。小白兔看见了，停下脚步，大声说：“山羊伯伯您先过桥吧！”说完，它就从桥上退了下来。山羊伯伯戴着眼镜，拄着拐杖在桥上慢慢地走着。山羊伯伯一不小心差点摔到了，吓得小白兔大声地喊：“山羊伯伯，小心一点过桥！”</p><p>\u3000\u3000'
+            '山羊伯伯过了桥，摸着小白兔的头夸奖道：“你真乖！”</p><p></p>',
+ 'description': '一只小白兔去采蘑菇，正走到一个很窄的桥上，它看见对面的山羊伯伯也准备要过桥，就停下脚步，大声说：“山羊伯伯您先过桥吧！”说完，它就从桥上退了下来。',
+ 'file_urls': ['http://story.beva.com/audio/download/11619/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/15373/ST_donglimaodexiaotu205213.png'],
+ 'name': '懂礼貌的小兔'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:54 [scrapy.core.scraper] ERROR: Error processing {'name': '三个好朋友', 'type_name': '睡前故事', 'short_desc': '永远读不够的故事。\r\n', 'book': [{'content': '<p>花园里有三只蝴蝶，一只是红色的，一只是黄色的，一只是白色的。三个好朋友天天都在一起玩。</p><p>一天，他们正玩得，天突然下起了雨。三只蝴蝶的翅膀都被雨打湿了，浑身冻得发抖。</p><p>三只小蝴蝶一起飞到红花那里，对红花说：“红花姐姐，让我们飞到你的叶子下面躲躲雨吧！”</p><p>红花说：“红蝴蝶进来吧，其他的快飞开！”\u3000'
+            '</p><p>三个好朋友一齐摇摇头：“我们是好朋友，一块儿来，也一块儿走。”</p><p>他们又飞到黄花那里，对黄花说：“黄花姐姐，让我们飞到你的叶子下面躲躲雨吧！”\u3000'
+            '黄花说：“黄蝴蝶进来吧，其他的快飞开！”</p><p>三个好朋友一齐摇摇头：“我们是好朋友，一块儿来，也一块儿走。”</p><p>然后，他们又飞到白花那里，对白花说：“白花姐姐，让我们飞到你的叶子下面躲躲雨吧。”</p><p>可是白花也说：“白蝴蝶进来吧，其他的快飞开！”</p><p>这三个好朋友还是一齐摇摇头，对白花说：“我们是好朋友，一块儿来，也一块儿走。”</p><p>这时，太阳公公看见了，赶忙把乌云赶走，叫雨停下。\u3000'
+            '</p><p>天终于晴了，这三个好朋友又一起在花丛中跳舞玩游戏。</p>',
+ 'description': '三个好朋友讲述了三只蝴蝶的故事。这三个好朋友天天都在一起玩，一天他们正玩着，天突然下起了雨。躲雨的时候，因为不忍心抛弃其他蝴蝶，三只蝴蝶的翅膀都被雨打湿了。',
+ 'file_urls': [],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10550/ST_sangehaopengyou205213-25.jpg'],
+ 'name': '三个好朋友'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:56 [scrapy.core.scraper] ERROR: Error processing {'name': '小猪发脾气', 'type_name': '睡前故事', 'short_desc': '小小猪发脾气，好朋友们都离去。\r\n', 'book': [{'content': '<p>小猪胖胖在外婆家认识了很多朋友，有小兔、小羊和小鸭。他们玩得可高兴了。分别的时候，小猪胖胖请朋友们明天到他家去玩。他们高兴地答应一定去。</p><p>第二天，小兔、小羊和小鸭互相约好，一起来到小猪胖胖的家。刚要敲门，忽然听到胖胖正在大吵大闹：“妈妈，你赔我蛋糕！”</p><p>“好乖乖，昨天你表弟把蛋糕吃了，明天我再给你买。”</p><p>“不行！不行！你凭什么给他吃！”</p><p>“妈妈并没错，你不该发脾气。”</p><p>“就发，就发脾气，你不赔蛋糕，我就闹！哇——哇——”小猪胖胖大哭大闹。</p><p>笃！笃！笃！小鸭在敲门。</p><p>小猪见了朋友，忙擦干眼泪说：“你们真准时，咱们在一起玩吧。”</p><p>“猪妈妈，您好！”朋友们先有礼貌地向猪妈妈打过招呼，然后一齐对小猪胖胖说：“我们是来和你告别的。不尊敬妈妈的孩子，也不会尊重朋友的。你还是自己玩吧。”说完，他们扭过头，手拉手一蹦一跳地走了。</p><p>小猪胖胖看着朋友们远去的背影，低着头对妈妈说：“妈妈，我错了。”</p>',
+ 'description': '《小猪发脾气》小猪胖胖在外婆家认识了很多朋友，有小兔、小羊和小鸭。他们玩得可高兴了。分别的时候，小猪胖胖请朋友们明天到他家去玩。他们高兴地答应一定去。第二天，小兔、小羊和小鸭互相约好，一起来到小猪胖胖......',
+ 'file_urls': ['http://story.beva.com/audio/download/11080/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/defaulticons/L_v1_sqgs.png'],
+ 'name': '小猪发脾气'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:06:56 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-12-19 22:06:58 [scrapy.core.scraper] ERROR: Error processing {'name': '小蛋壳的故事', 'type_name': '睡前故事', 'short_desc': '蛋壳当摇篮，真舒服！', 'book': [{'content': '<p></p><p>“噼噼啪！”小蛋壳裂开了，钻出一只毛茸茸的鸡宝宝。鸡妈妈带着鸡宝宝去散步。刮风了，鸡妈妈张开大翅膀，鸡宝宝赶快钻进去。这是它的新家呀。\u3000\u3000'
+            '</p><p></p><p>小蛋壳有点孤单。“现在我不是鸡宝宝的家了。对了，我再去找一个小宝宝，做它的家。”它咕噜咕噜滚走了。\u3000\u3000'
+            '</p><p></p><p>一只蜜蜂在采花粉。“蜜蜂宝宝，我做你的新家吧！”“谢谢你，小蛋壳。我不是蜜蜂宝宝，我是蜜蜂阿姨。我的家在大树上，那个圆圆的蜂巢就是我的家。” \u3000\u3000'
+            '</p><p></p><p>一只蚂蚁在拖虫子。“蚂蚁宝宝，我做你的新家吧！”“谢谢你，小蛋壳。我不是蚂蚁宝宝，我是蚂蚁姐姐。我的家在田埂上，那个小小的泥洞就是我的家。” \u3000\u3000'
+            '</p><p></p><p>一只小青蛙在唱歌。“青蛙宝宝，我做你的新家吧！”“谢谢你，小蛋壳。我不是青蛙宝宝，我是青蛙哥哥。我的家在前面的小池塘里。” \u3000\u3000'
+            '</p><p></p><p>一只小蜗牛在散步。“蜗牛宝宝，我做你的新家吧！”“谢谢你，小蛋壳。我有家呀，你看我的家在背上呢。” \u3000\u3000'
+            '</p><p></p><p>谁也不要它，小蛋壳有点难过。\u3000\u3000'
+            '一只金龟子路过这里。“太好啦，我的宝宝正缺个摇篮，这只蛋壳做摇篮刚刚好！”金龟子衔来一片花瓣铺在小蛋壳里面。多舒服呀！\u3000\u3000'
+            '</p><p></p><p>“快快睡，小宝贝。”金龟子向睡在蛋壳摇篮里的小宝宝唱起了歌。小蛋壳听着听着，也睡着啦。 </p>',
+ 'description': '小鸡从蛋壳里钻出来了，有了自己的新家。可是小蛋壳有点孤单，它咕噜咕噜滚走了。一只金龟子看见了，用这只蛋壳给他的宝宝做了摇篮。',
+ 'file_urls': ['http://story.beva.com/audio/download/11641/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/43812/ST_xiaodanke205213.png'],
+ 'name': '小蛋壳的故事'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:07:00 [scrapy.core.scraper] ERROR: Error processing {'name': '小老鼠的“敲...', 'type_name': '睡前故事', 'short_desc': '这真是一根奇妙的小棍儿!', 'book': [{'content': '<p></p><p>“敲敲长”是一根五彩小棍儿，用它敲什么，什么就长大起来。比如，田野里有一棵小豆苗，细细的、矮矮的。米皮皮用“敲敲长”轻轻地敲它，嘴里说“长!长!长”，小豆苗就长得又高又壮了。\u3000\u3000'
+            '</p><p></p><p>米皮皮到兔妈妈家串门儿，兔妈妈正在犯愁：“唉，胡萝卜刚刚长出地面，孩子们就吵着要吃。”米皮皮说：“别急别急，让我来试试!”米皮皮用“敲敲长”轻轻地敲着小小的胡萝卜，嘴里说“长!长!长”，胡萝卜就长大了，兔妈妈高兴得谢了又谢。\u3000\u3000'
+            '</p><p></p><p>米皮皮和小狗、小鸡在草地上玩，突然下起了大雨。米皮皮找到一个小蘑菇，用“敲敲长”轻轻地敲着，嘴里说“长!长!长”，小蘑菇真的成了一把大伞。小狗、小鸡都躲到了大伞底下。\u3000\u3000'
+            '</p><p></p><p>可是有一回，米皮皮把“敲敲长”弄丢了。是谁捡到了宝贝呢?原来是狼婆婆。狼婆婆正在洞里发愁呢：“米皮皮，快来帮帮我!”米皮皮看到狼婆婆大得像头牛，就问：“你为什么要长这么大?” \u3000\u3000'
+            '</p><p></p><p>“我想试试‘敲敲长’灵不灵，我用你的宝贝敲敲腿，念了‘长，长，长’，就长得这么大了。” \u3000\u3000'
+            '</p><p></p><p>米皮皮拿过“敲敲长”，敲着狼婆婆的腿，嘴里说“缩!缩!缩”，果然，狼婆婆又变成了原样儿。\u3000\u3000'
+            '</p><p></p><p>原来呀，把这小棍儿倒过来敲，就能使东西缩小。这真是一根奇妙的小棍儿! </p>',
+ 'description': '兔妈妈正在犯愁：唉，胡萝卜刚刚长出地面，孩子们就吵着要吃。米皮皮说：别急别急，让我来试试!米皮皮用敲敲长轻轻地敲着小小的胡萝卜，嘴里说长!长!长',
+ 'file_urls': ['http://story.beva.com/audio/download/11463/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/43808/ST_xiaolaoshu205213.png'],
+ 'name': '小老鼠的“敲敲长”'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:07:02 [scrapy.core.scraper] ERROR: Error processing {'name': '小蝌蚪画画', 'type_name': '睡前故事', 'short_desc': '小蝌蚪快长大，长大变成绿青蛙。', 'book': [{'content': '<p></p><p>池塘里有许许多多的小蝌蚪，小蝌蚪的尾巴一甩一甩的，真帅！</p><p></p><p>小蝌蚪在干什么呢？它们正用细细的长尾巴当画笔，认认真真地写作业哪！</p><p></p><p>它们写呀写，写出了一行行没有格式的小诗；</p><p></p><p>它们画呀画，画出了一池看不出谜底的画谜。</p><p></p><p>可是，小蝌矫的画笔呀，一天比一天短，最后短得再也不能用了。</p><p></p><p>小鱼小虾发现了，嘀嘀咕咕地说着：“哎呀，小蝌蚪一定是学坏了！要不，它的尾巴怎么没有了呢？” '
+            '</p><p></p><p>“是呀，听说小白兔因为说瞎话，变成了短尾巴！小蝌蚪一定干了什么坏事！” '
+            '</p><p></p><p>起初，小蝌蚪也以为自己的尾巴真的丢了，在池塘里找呀找。后来，它们扑哧一声笑了——妈妈不是说过：“孩子，掉了尾巴，你们就算长大了！就可以到岸上去找小朋友啦！”</p><p></p><p>于是，它们一蹦一跳地跃出了池塘，变成了一只只可爱的小青蛙。</p>',
+ 'description': '小蝌蚪画画这个故事通过小蝌蚪掉尾巴讲述了青蛙的成长过程。起初，小蝌蚪也以为自己的尾巴真的丢了，在池塘里找呀找。后来，它们想起来妈妈曾经说过：“孩子，掉了尾巴，你们就算长大了！就可以到岸上去找小朋友啦！......',
+ 'file_urls': ['http://story.beva.com/audio/download/11321/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10306/ST_xiaokedouhuahua205213.png'],
+ 'name': '小蝌蚪画画'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:07:04 [scrapy.core.scraper] ERROR: Error processing {'name': '燕子飞回来了', 'type_name': '睡前故事', 'short_desc': '春天到了燕子从南方飞回来了。\r\n', 'book': [{'content': '<p>春天到了，小燕子跟着妈妈从很远很远的南方飞回来。</p><p>飞呀，飞呀，她们飞过大海。小燕子往下一看，奇怪地问：“妈妈，海面上哪儿来那么多铁塔？”妈妈笑着说：“孩子，那是井架，工人在开采海底的石油呢。”</p><p>飞呀，飞呀，她们飞过高山。小燕子往下一看，奇怪地问：“妈妈，那火车为什么不冒烟呢？”妈妈笑着说：“孩子，那是电力机车。你看，车顶上还有电线呢。”</p><p>飞呀，飞呀，她们飞过田野，飞到去年住过的地方。小燕子奇怪地问：“妈妈，这里哪儿来那么多新房子？”妈妈笑着说：“孩子，农民过上好日子啦。你看，那写字的孩子不是秋成吗？”</p><p>小燕子高兴地说：“妈妈，秋成也上学了。”妈妈说：“是呀！农村的变化可真大啊！”</p>',
+ 'description': '《燕子飞回来了》讲述春天到了，小燕子跟着妈妈从很远很远的南方飞回来。飞呀，飞呀，她们飞过大海。飞呀，飞呀，她们飞过高山。小燕子问了妈妈几个问题，描述一个春天的景象。',
+ 'file_urls': ['http://story.beva.com/audio/download/10114/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/10204/ST_yanzifeihuilaile205.jpg'],
+ 'name': '燕子飞回来了'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:07:06 [scrapy.core.scraper] ERROR: Error processing {'name': '三颗星星', 'type_name': '睡前故事', 'short_desc': '清晨会有礼物摆放在我窗前，如雪地里盛开的花，叫我...', 'book': [{'content': '<p>天上有一颗红星星，一颗绿星星，一颗黄星星，他们是好朋友，一天，他们在捉迷藏。</p><p>红星星看见一朵白云飘来，就急急忙忙朝白云跑去，哎呀！红星星跑得太急了，摔了一跤，掉到地上去了。</p><p>砰！红星星掉在马路边的一棵大树上。</p><p>嘟嘟，开来了一辆小汽车，小汽车看见红星星，嘎地一声停住了。</p><p>红星星觉得很奇怪，就问：“你怎么不开呀？”</p><p>小汽车说：“你是红灯呀，要等绿灯亮了才能开呢！”</p><p>不一会儿，红星星的面前停满了各种各样的汽车，把马路都塞满了。汽车们使劲按着喇叭一齐叫起来：“快换绿灯!快换绿灯！”把红星星急得直眨眼睛。</p><p>“到哪里去找绿灯呀？有了，叫绿星星来帮忙！”红星星想出了好办法。可是，绿星星在天上，谁去告诉它呢？</p><p>小鸟说：“我去告诉它！”小鸟使劲儿往天上飞，不一会儿翅膀就酸了，飞不了，正好碰上了老鹰。老鹰说：“我去告诉绿星星！”</p><p>老鹰张开了大翅膀，继续往天上飞。飞到半空，也飞不了，正好碰上了飞机，飞机说：“我去告诉绿星星！”</p><p>飞机飞得又快又高，可怎么也飞不到绿星星那儿，正好碰上了火箭，火箭说：“我去告诉它！”</p><p>火箭嗖的一口气就飞到天上。绿星星和黄星星正在那里找红星星呢。</p><p>绿星星听说红星星在等着它去帮忙，就急急忙忙往下跑。黄星星说：“我也去，我也去！”</p><p>绿星星一来，汽车们都高兴地嘟嘟叫，可是，谁也不开。红星星问：“你们怎么还不开呀？”汽车说：“闭上，你快把眼睛闭上！”红星星急忙把眼睛闭上。绿星星和黄星星呢，也学者红星星的样子，闭上了眼睛。汽车们急得大叫：“睁开，睁开！”三颗星星一起睁开眼睛。</p><p>“不行，不行！”汽车们大声嚷嚷：“绿星星睁开眼睛，红星星、黄星星都把眼睛闭上。”</p><p>“对！你们轮流眨眼睛。”</p><p>红星星和黄星星，赶紧闭上眼睛。绿星星呢，把眼睛睁得大大的。嗨，汽车一辆接着一辆，全开走了。</p>',
+ 'description': '三颗星星红黄蓝，他们是好朋友。三颗星星天上玩，红星星掉到马路上，小汽车看见红星星不敢开车，火箭帮忙找伙伴，红花蓝三颗星星当起了信号灯。',
+ 'file_urls': ['http://story.beva.com/audio/download/10232/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/11620/ST_sankexingxing205213-17.jpg'],
+ 'name': '三颗星星'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'
+2018-12-19 22:07:08 [scrapy.core.scraper] ERROR: Error processing {'name': '小猪的礼物', 'type_name': '睡前故事', 'short_desc': '珍贵的礼物。\r\n', 'book': [{'content': '<p>今天是小猴的生日，朋友们都来向它祝贺。小松鼠送来了开心果，小乌龟送来了冰淇淋，小白兔送来了巧克力。小猴请朋友们坐下来，一起吃生日蛋糕。</p><p>可是，小猴的好朋友小胖猪没有来，大家觉得很奇怪。</p><p>送走了小松鼠、小乌龟和小白兔，小猴出门去找小胖猪。</p><p>一只老山羊在高高的山坡上吃草，小猴走过去有礼貌地问：“山羊爷爷，山羊爷爷，您看到我的朋友小胖猪了吗？”</p><p>“小胖猪呀，”老山羊摇摇白胡子说，“它到那边的树林子里去了。”</p><p>小猴走进树林子里，看见一只漂亮的小鸟在树梢上唱歌，小猴问：“小鸟，小鸟，你看见我的朋友小胖猪了吗？”</p><p>“小胖猪呀，”小鸟理理花羽毛说，“它到那边的山谷里去了。”</p><p>小猴跑进山谷里，山谷里空空荡荡的，没有小胖猪的身影，只有一棵结满了果实的山核桃树。</p><p>“小胖猪，你在哪里？”小猴大声喊。</p><p>“我在这啦。”山核桃树下传来了小胖猪的声音。</p><p>小猴跑过去一看，小胖猪掉进山核桃树下的深沟里，上不来了。</p><p>小猴攀着山核桃树，将长尾巴垂到沟里，让小胖猪抓住。小猴一使劲，呼啦一下子，小胖猪上来了。</p><p>“对不起，小猴，”小胖猪说，“我想把你最爱吃的山核桃摘下来，送给你做礼物，可是我太笨了，从树上摔进沟里了，什么礼物也没有了。”</p><p>小猴紧紧地拥抱着小胖猪，真诚地说：“你已经送了最好的礼物给我啦！”</p><p>“没有呀，我什么也没送呀！”小胖猪结结巴巴地说。</p><p>“你这傻胖猪呀！”小猴拍拍小胖猪摔得青一块紫一块的脸，调皮地说，“这就是最好的礼物项！”</p><p>小猴爬到山核桃树上，摘下许多的山核桃。它把山核桃带回家，请小胖猪一起吃。</p><p>它俩都爱吃山核桃呢！</p><p></p>',
+ 'description': '《小猪的礼物》讲述小猴的生日，朋友们都来向它祝贺。小松鼠送来了开心果，小乌龟送来了冰淇淋，小白兔送来了巧克力。小猴请朋友们坐下来，一起吃生日蛋糕。可是，小猴的好朋友小胖猪没有来，大家觉得很奇怪。',
+ 'file_urls': ['http://story.beva.com/audio/download/11082/1'],
+ 'image_urls': ['https://3w.beva.cn/story/images/res/defaulticons/L_v1_sqgs.png'],
+ 'name': '小猪的礼物'}], 'images': []}
+Traceback (most recent call last):
+  File "d:\soft\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\work\python\audio\audio\pipelines.py", line 45, in process_item
+    first_img = ture_path + item['book'][0]['images'][0]['path']
+  File "d:\soft\python37\lib\site-packages\scrapy\item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'images'

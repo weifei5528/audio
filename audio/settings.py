@@ -72,7 +72,7 @@ ITEM_PIPELINES = {
     # 'audio.pipelines.MyImagepipeline': 10,
    # 'audio.pipelines.MyFilepipeline': 20
 }
-IMAGES_STORE = r'D:\work\python\audio\audio'
+IMAGES_STORE = r'D:\work\python\public\uploads\images\beva'
 
 FILES_STORE = r'D:\work\python\audio\audio'
 

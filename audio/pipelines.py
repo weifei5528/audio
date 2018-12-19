@@ -33,16 +33,20 @@ class AudioPipeline(object):
             res = mysql.select("select * from dp_categories where name = %s", type_name)
             now_time = int(time.time())
             if len(res) == 0:
-
                 count = mysql.insert("insert into dp_categories (name,create_time,update_time) values (%s, %s, %s)",
                                      (type_name, now_time, now_time))
                 res = mysql.select("select * from dp_categories where name = %s", type_name)
                 #print(count)
             book = mysql.select("select * from dp_books where name = %s and cat_id = %s", (item['name'], res[0]['id']))
+            chapter_list = item['book']
+            first_img = ''
+            ture_path = "uploads/images/beva/"
+            if len(chapter_list) > 0:
+                first_img = ture_path + item['book'][0]['images'][0]['path']
             if len(book) == 0:
                 mysql.insert("insert into dp_books (name, cat_id, create_time,update_time, author, publish, `from`"
-                             ", description) values (%s, %s, %s, %s, %s, %s, %s, %s)",
-                             (item['name'], res[0]['id'], now_time, now_time, '未知', '未知', '贝瓦', item['short_desc']))
+                             ", img,description) values (%s, %s, %s, %s, %s, %s, %s, %s, %s)",
+                             (item['name'], res[0]['id'], now_time, now_time, '未知', '未知', '贝瓦',first_img, item['short_desc']))
         return item
 
 

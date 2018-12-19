@@ -48,8 +48,7 @@ class BevaSpider(scrapy.Spider):
             yield book
             item['book'].append(book)
             yield item
-            #print(book)
-            return book
+            return item
         elif type(book_list) is not None:
             for tag in book_list:
                 url = tag.css("a::attr(href)").extract_first()
