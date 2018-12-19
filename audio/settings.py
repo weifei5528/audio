@@ -68,8 +68,9 @@ LOG_LEVEL = "INFO"
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'audio.pipelines.AudioPipeline': 300,
-    'audio.pipelines.MyImagepipeline': 10,
-    'audio.pipelines.MyFilepipeline': 20
+    'scrapy.pipelines.images.ImagesPipeline': 10,
+    # 'audio.pipelines.MyImagepipeline': 10,
+   # 'audio.pipelines.MyFilepipeline': 20
 }
 IMAGES_STORE = r'D:\work\python\audio\audio'
 

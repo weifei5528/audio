@@ -17,7 +17,7 @@ class BevaSpider(scrapy.Spider):
             item['short_desc'] = tag.css("span.sll3::text").extract_first()
             item['book'] = []
             url = tag.css("span.sll2 > a::attr(href)").extract_first()
-            print(url)
+            #print(url)
             yield scrapy.Request(self.my_host + url, callback=self.getDetail, meta={'item': item})
         page = response.css("#pagination")
         next_page = page.xpath("./a[contains(text(),'下一页')]/@href").extract_first()
@@ -42,10 +42,13 @@ class BevaSpider(scrapy.Spider):
                 book['file_urls'].append(self.my_host + down_url)
             book['description'] = response.xpath("//div[@class='stinfo']/p/text()").extract_first()
             name = response.xpath("//div[@id='stcontent']/h1[@class='stctitle']/text()").extract_first()
-            name = re.sub('[\[\]【】]', '', name)
-            book['name'] = name
+            if name is not None:
+                name = re.sub('[\[\]【】]', '', name)
+                book['name'] = name
+            yield book
             item['book'].append(book)
-            print(book)
+            yield item
+            #print(book)
             return book
         elif type(book_list) is not None:
             for tag in book_list:

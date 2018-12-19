@@ -4,12 +4,15 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-from audio.items import AudioItem, Book, Mp3
+from audio.items import AudioItem, Book, Mp3, BevaBook, BevaBooks
 from scrapy.pipelines.images import ImagesPipeline
 from scrapy.http.request import Request
 from audio.util import Util
 from scrapy.pipelines.files import FilesPipeline
+from audio.database import Mysql
+import time
 #import eyed3
+
 
 class AudioPipeline(object):
     def process_item(self, item, spider):
@@ -22,6 +25,24 @@ class AudioPipeline(object):
         if isinstance(item, Mp3):
             print(item)
             pass
+        if isinstance(item, BevaBook):
+            print(item)
+        if isinstance(item, BevaBooks):
+            type_name = item['type_name']
+            mysql = Mysql()
+            res = mysql.select("select * from dp_categories where name = %s", type_name)
+            now_time = int(time.time())
+            if len(res) == 0:
+
+                count = mysql.insert("insert into dp_categories (name,create_time,update_time) values (%s, %s, %s)",
+                                     (type_name, now_time, now_time))
+                res = mysql.select("select * from dp_categories where name = %s", type_name)
+                #print(count)
+            book = mysql.select("select * from dp_books where name = %s and cat_id = %s", (item['name'], res[0]['id']))
+            if len(book) == 0:
+                mysql.insert("insert into dp_books (name, cat_id, create_time,update_time, author, publish, `from`"
+                             ", description) values (%s, %s, %s, %s, %s, %s, %s, %s)",
+                             (item['name'], res[0]['id'], now_time, now_time, '未知', '未知', '贝瓦', item['short_desc']))
         return item
 
 

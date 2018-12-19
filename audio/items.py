@@ -34,6 +34,7 @@ class Mp3(scrapy.Item):
 
 class BevaBook(scrapy.Item):
     image_urls = scrapy.Field()
+    images = scrapy.Field()
     original_path = scrapy.Field()
     file_urls = scrapy.Field()
     content = scrapy.Field()
