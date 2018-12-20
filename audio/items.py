@@ -40,12 +40,13 @@ class BevaBook(scrapy.Item):
     content = scrapy.Field()
     name = scrapy.Field()
     description = scrapy.Field()
+    book_name = scrapy.Field()
 
 
 class BevaBooks(scrapy.Field):
     name = scrapy.Field()
     type_name = scrapy.Field()
-    book = scrapy.Field()
+    #book = scrapy.Field()
     short_desc = scrapy.Field()
 
 

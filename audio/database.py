@@ -56,6 +56,18 @@ class Mysql(object):
             cursor.close()
             db.close()
 
+    def select_one(self, sql, param=()):
+        try:
+            db = self.connect()
+            cursor = db.cursor(self.cursor_type)
+            cursor.execute(sql, param)
+            results = cursor.fetchone()
+        except pymysql.MySQLError as e:
+            print("查询数据错误，错误信息为:" + ' '.join(tuple(e.args)))
+        finally:
+            cursor.close()
+            db.close()
+        return results
 
 
 

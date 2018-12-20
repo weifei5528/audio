@@ -69,12 +69,13 @@ LOG_LEVEL = "INFO"
 ITEM_PIPELINES = {
     'audio.pipelines.AudioPipeline': 300,
     'scrapy.pipelines.images.ImagesPipeline': 10,
+    'scrapy.pipelines.files.FilesPipeline': 15,
     # 'audio.pipelines.MyImagepipeline': 10,
    # 'audio.pipelines.MyFilepipeline': 20
 }
 IMAGES_STORE = r'D:\work\python\public\uploads\images\beva'
 
-FILES_STORE = r'D:\work\python\audio\audio'
+FILES_STORE = r'D:\work\python\public\uploads\mp3\beva'
 
 # 图像管道避免下载最近已经下载的图片。使用 FILES_EXPIRES (或 IMAGES_EXPIRES) 设置可以调整失效期限，
 # 可以用天数来指定
