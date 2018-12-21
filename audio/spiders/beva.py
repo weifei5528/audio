@@ -2,13 +2,57 @@
 import scrapy
 from audio.items import BevaBooks, BevaBook
 import re
+import json
 class BevaSpider(scrapy.Spider):
     name = 'beva'
     allowed_domains = ['beva.com']
     my_host = "http://story.beva.com"
     start_urls = ['http://story.beva.com/99/']
-    login_url = "http://account.beva.com/newAccount/ajaxLogin"
+    login_url = "http://account.beva.com/newAccount/register?returnUrl=http%3A%2F%2Fstory.beva.com%2F&source=2"
+    login_data = {
+        'beva_username': 'weifei528@qq.com',
+        'beva_password': 'weifei851213',
+        'source': '2',
+        'beva_rememberMe': "on"
+    }
+    headers = {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip,deflate",
+        "Accept-Language": "en-US,en;q=0.8,zh-TW;q=0.6,zh;q=0.4",
+        "Connection": "keep-alive",
+        "Content-Type": " application/x-www-form-urlencoded; charset=UTF-8",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36",
+        "Referer": "http://story.beva.com"
+    }
+
+    def start_requests(self):
+        return [scrapy.Request(url="http://account.beva.com/newAccount/register?returnUrl=http%3A%2F%2Fstory.beva.com%2F"
+                                   "&source=2", meta={'cookiejar': 1},
+                               callback=self.login_html)]
+
+    def login_html(self, response):
+        #cookie1 = response.headers.getlist('Set-Cookie')
+        #print("cookie1的值为:", cookie1)
+        return [scrapy.FormRequest.from_response(response,
+                                                 url='http://account.beva.com/newAccount/ajaxLogin',  # 真实post地址
+                                                 meta={'cookie': response.meta['cookiejar']},
+                                                 formdata=self.login_data,
+                                                 callback=self.login,
+                                                 headers=self.headers,
+                                                 method="POST",
+                                                 dont_filter=True)]
+
+    def login(self, response):
+        print(response.request)
+        cookie2 = response.request.headers.getlist('cookiejar')
+        print('登录时携带请求的Cookies：', cookie2)
+        jieg = response.body  # 登录后可以查看一下登录响应信息
+
+        print('登录响应结果：', json.loads(jieg))
+        yield self.make_requests_from_url(self.start_urls[0])
+
     def parse(self, response):
+        print(response.request.headers)
         list_tag = response.css(".slist > ul > li")
         for tag in list_tag:
             item = BevaBooks()

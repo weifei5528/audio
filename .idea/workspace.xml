@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cef4d31-8e72-4703-aec9-a215a0cf0414" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/audio/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/audio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/audio/spiders/beva.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio/spiders/beva.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mySpider.log" beforeDir="false" afterPath="$PROJECT_DIR$/mySpider.log" afterDir="false" />
@@ -29,16 +27,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/audio/spiders/beva.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+            <state relative-caret-position="-100">
+              <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/audio/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="723">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mySpider.log">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -56,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/audio/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
+            <state relative-caret-position="1425">
               <caret line="58" column="18" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="18" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -68,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/Program Files/Python/Python37/Lib/site-packages/pymysql/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1048">
+            <state relative-caret-position="2050">
               <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
               <folding>
                 <element signature="e#1123#1133#0" expanded="true" />
@@ -80,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/audio/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="71" column="47" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+            <state relative-caret-position="75">
+              <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -89,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/audio/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
+            <state relative-caret-position="875">
               <caret line="35" column="14" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="14" />
             </state>
           </provider>
@@ -124,10 +136,11 @@
         <option value="$PROJECT_DIR$/audio/db.cfg" />
         <option value="$PROJECT_DIR$/audio/items.py" />
         <option value="$PROJECT_DIR$/audio/database.py" />
-        <option value="$PROJECT_DIR$/mySpider.log" />
         <option value="$PROJECT_DIR$/audio/pipelines.py" />
-        <option value="$PROJECT_DIR$/audio/settings.py" />
+        <option value="$PROJECT_DIR$/audio/middlewares.py" />
         <option value="$PROJECT_DIR$/audio/spiders/beva.py" />
+        <option value="$PROJECT_DIR$/audio/settings.py" />
+        <option value="$PROJECT_DIR$/mySpider.log" />
       </list>
     </option>
   </component>
@@ -212,16 +225,18 @@
       <workItem from="1545188094814" duration="11286000" />
       <workItem from="1545209789696" duration="2101000" />
       <workItem from="1545222835309" duration="4496000" />
+      <workItem from="1545352916014" duration="10314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63614000" />
+    <option name="totallyTimeSpent" value="73928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.11103152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1108742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -322,7 +337,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/audio/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
+        <state relative-caret-position="1425">
           <caret line="58" column="18" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="18" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -332,11 +347,18 @@
     </entry>
     <entry file="file://D:/Program Files/Python/Python37/Lib/site-packages/pymysql/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1048">
+        <state relative-caret-position="2050">
           <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
           <folding>
             <element signature="e#1123#1133#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audio/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -350,36 +372,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/audio/settings.py">
+    <entry file="file://D:/Program Files/Python/Python37/Lib/site-packages/scrapy/http/request/form.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="71" column="47" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+        <state relative-caret-position="350">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mySpider.log">
+    <entry file="file://$PROJECT_DIR$/audio/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2855">
-          <caret line="4476" column="94" lean-forward="true" selection-start-line="4476" selection-start-column="94" selection-end-line="4476" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audio/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="14" />
+        <state relative-caret-position="723">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/audio/spiders/beva.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="-100">
+          <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audio/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mySpider.log">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
