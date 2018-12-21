@@ -3,6 +3,7 @@ import scrapy
 from audio.items import BevaBooks, BevaBook
 import re
 import json
+
 class BevaSpider(scrapy.Spider):
     name = 'beva'
     allowed_domains = ['beva.com']

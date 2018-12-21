@@ -11,9 +11,12 @@ from audio.util import Util
 from scrapy.pipelines.files import FilesPipeline
 from audio.database import Mysql
 import time
+from scrapy.utils.project import get_project_settings
+import zipfile
 #import eyed3
 
 TRUE_PATH = "uploads/images/beva/"
+FILE_PATH = "uploads/mp3/beva/"
 
 
 class AudioPipeline(object):
@@ -29,24 +32,32 @@ class AudioPipeline(object):
             print(item)
             pass
         if isinstance(item, BevaBook):
+            settings = get_project_settings()
+            file_store = settings.get('FILES_STORE')
+            file_path = ''
+            file_original = item['file_urls'][0]
+            if len(item['files']) > 0:
+
+                f = zipfile.ZipFile(file_store + "/" + item['files'][0]['path'], 'r')
+                for name in f.namelist():
+                    file_path = FILE_PATH + name
+                    f.extract(name, file_store)
+
             book_name = item['book_name']
             info = mysql.select_one("select * from dp_books where name = %s", (book_name,))
-            #print(item)
-            #print(info)
             if info is not None:
                 chapter_info = mysql.select_one("select * from dp_chapters where name = %s AND book_id = %s",
                                                 (item['name'], info['id']))
                 if chapter_info is None:
                     now_time = int(time.time())
-                    #print("===============")
                     mysql.insert("insert into dp_chapters (name, img, img_original, book_id, content, description"
-                                 ", create_time, update_time) values (%s, %s, %s, %s, %s, %s, %s, %s)",
+                                 ", create_time, update_time, mp3, mp3_original) values "
+                                 "(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
                                  (item['name'], TRUE_PATH + item['images'][0]['path'], item['image_urls'][0], info['id']
-                                  , item['content'], item['description'], now_time, now_time))
+                                  , item['content'], item['description'], now_time, now_time, file_path,file_original))
 
             return item
         if isinstance(item, BevaBooks):
-            #print(item)
             type_name = item['type_name']
             res = mysql.select("select * from dp_categories where name = %s", type_name)
             now_time = int(time.time())

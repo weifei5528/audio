@@ -37,6 +37,7 @@ class BevaBook(scrapy.Item):
     images = scrapy.Field()
     original_path = scrapy.Field()
     file_urls = scrapy.Field()
+    files = scrapy.Field()
     content = scrapy.Field()
     name = scrapy.Field()
     description = scrapy.Field()
